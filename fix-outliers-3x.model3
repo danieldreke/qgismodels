@@ -1,0 +1,402 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option type="Map" name="children">
+    <Option type="Map" name="gdal:translate_1">
+      <Option type="bool" name="active" value="true"/>
+      <Option name="alg_config"/>
+      <Option type="QString" name="alg_id" value="gdal:translate"/>
+      <Option type="QString" name="component_description" value="Translate (convert format)"/>
+      <Option type="double" name="component_pos_x" value="632.66666666666652"/>
+      <Option type="double" name="component_pos_y" value="252.66666666666652"/>
+      <Option name="dependencies"/>
+      <Option type="QString" name="id" value="gdal:translate_1"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="Output 1st">
+          <Option type="QString" name="child_id" value="gdal:translate_1"/>
+          <Option type="QString" name="component_description" value="Output 1st"/>
+          <Option type="double" name="component_pos_x" value="832.66666666666652"/>
+          <Option type="double" name="component_pos_y" value="297.66666666666652"/>
+          <Option type="invalid" name="default_value"/>
+          <Option type="bool" name="mandatory" value="false"/>
+          <Option type="QString" name="name" value="Output 1st"/>
+          <Option type="QString" name="output_name" value="OUTPUT"/>
+        </Option>
+      </Option>
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="COPY_SUBDATASETS">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="bool" name="static_value" value="false"/>
+          </Option>
+        </Option>
+        <Option type="List" name="DATA_TYPE">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="int" name="static_value" value="0"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option type="QString" name="child_id" value="model:Fix Outliers_1"/>
+            <Option type="QString" name="output_name" value="gdal:translate_1:Output"/>
+            <Option type="int" name="source" value="1"/>
+          </Option>
+        </Option>
+        <Option type="List" name="NODATA">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="invalid" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="OPTIONS">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value=""/>
+          </Option>
+        </Option>
+        <Option type="List" name="TARGET_CRS">
+          <Option type="Map">
+            <Option type="QString" name="child_id" value="model:Fix Outliers_1"/>
+            <Option type="QString" name="output_name" value="gdal:translate_1:Output"/>
+            <Option type="int" name="source" value="1"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="gdal:translate_2">
+      <Option type="bool" name="active" value="true"/>
+      <Option name="alg_config"/>
+      <Option type="QString" name="alg_id" value="gdal:translate"/>
+      <Option type="QString" name="component_description" value="Translate (convert format)"/>
+      <Option type="double" name="component_pos_x" value="521.99999999999989"/>
+      <Option type="double" name="component_pos_y" value="409.99999999999989"/>
+      <Option name="dependencies"/>
+      <Option type="QString" name="id" value="gdal:translate_2"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="Output 2nd">
+          <Option type="QString" name="child_id" value="gdal:translate_2"/>
+          <Option type="QString" name="component_description" value="Output 2nd"/>
+          <Option type="double" name="component_pos_x" value="721.99999999999989"/>
+          <Option type="double" name="component_pos_y" value="454.99999999999989"/>
+          <Option type="invalid" name="default_value"/>
+          <Option type="bool" name="mandatory" value="false"/>
+          <Option type="QString" name="name" value="Output 2nd"/>
+          <Option type="QString" name="output_name" value="OUTPUT"/>
+        </Option>
+      </Option>
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="COPY_SUBDATASETS">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="bool" name="static_value" value="false"/>
+          </Option>
+        </Option>
+        <Option type="List" name="DATA_TYPE">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="int" name="static_value" value="0"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option type="QString" name="child_id" value="model:Fix Outliers_2"/>
+            <Option type="QString" name="output_name" value="gdal:translate_1:Output"/>
+            <Option type="int" name="source" value="1"/>
+          </Option>
+        </Option>
+        <Option type="List" name="NODATA">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="invalid" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="OPTIONS">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value=""/>
+          </Option>
+        </Option>
+        <Option type="List" name="TARGET_CRS">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value="ProjectCrs"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="gdal:translate_3">
+      <Option type="bool" name="active" value="true"/>
+      <Option name="alg_config"/>
+      <Option type="QString" name="alg_id" value="gdal:translate"/>
+      <Option type="QString" name="component_description" value="Translate (convert format)"/>
+      <Option type="double" name="component_pos_x" value="340.6666666666664"/>
+      <Option type="double" name="component_pos_y" value="567.33333333333337"/>
+      <Option name="dependencies"/>
+      <Option type="QString" name="id" value="gdal:translate_3"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="Output 3rd">
+          <Option type="QString" name="child_id" value="gdal:translate_3"/>
+          <Option type="QString" name="component_description" value="Output 3rd"/>
+          <Option type="double" name="component_pos_x" value="540.6666666666664"/>
+          <Option type="double" name="component_pos_y" value="612.33333333333337"/>
+          <Option type="invalid" name="default_value"/>
+          <Option type="bool" name="mandatory" value="false"/>
+          <Option type="QString" name="name" value="Output 3rd"/>
+          <Option type="QString" name="output_name" value="OUTPUT"/>
+        </Option>
+      </Option>
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="COPY_SUBDATASETS">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="bool" name="static_value" value="false"/>
+          </Option>
+        </Option>
+        <Option type="List" name="DATA_TYPE">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="int" name="static_value" value="0"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option type="QString" name="child_id" value="model:Fix Outliers_3"/>
+            <Option type="QString" name="output_name" value="gdal:translate_1:Output"/>
+            <Option type="int" name="source" value="1"/>
+          </Option>
+        </Option>
+        <Option type="List" name="NODATA">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="invalid" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="OPTIONS">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value=""/>
+          </Option>
+        </Option>
+        <Option type="List" name="TARGET_CRS">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value="ProjectCrs"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="model:Fix Outliers_1">
+      <Option type="bool" name="active" value="true"/>
+      <Option name="alg_config"/>
+      <Option type="QString" name="alg_id" value="model:Fix Outliers"/>
+      <Option type="QString" name="component_description" value="Fix Outliers of 1st Raster"/>
+      <Option type="double" name="component_pos_x" value="487.9999999999992"/>
+      <Option type="double" name="component_pos_y" value="180.66666666666657"/>
+      <Option name="dependencies"/>
+      <Option type="QString" name="id" value="model:Fix Outliers_1"/>
+      <Option name="outputs"/>
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="1strasterwithoutliers">
+          <Option type="Map">
+            <Option type="QString" name="parameter_name" value="1strasterwithoutliers"/>
+            <Option type="int" name="source" value="0"/>
+          </Option>
+        </Option>
+        <Option type="List" name="formula">
+          <Option type="Map">
+            <Option type="QString" name="parameter_name" value="formula"/>
+            <Option type="int" name="source" value="0"/>
+          </Option>
+        </Option>
+        <Option type="List" name="referencerastera">
+          <Option type="Map">
+            <Option type="QString" name="parameter_name" value="referencerastera"/>
+            <Option type="int" name="source" value="0"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="model:Fix Outliers_2">
+      <Option type="bool" name="active" value="true"/>
+      <Option name="alg_config"/>
+      <Option type="QString" name="alg_id" value="model:Fix Outliers"/>
+      <Option type="QString" name="component_description" value="Fix Outliers of 2nd Raster"/>
+      <Option type="double" name="component_pos_x" value="329.99999999999989"/>
+      <Option type="double" name="component_pos_y" value="329.33333333333314"/>
+      <Option name="dependencies"/>
+      <Option type="QString" name="id" value="model:Fix Outliers_2"/>
+      <Option name="outputs"/>
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="1strasterwithoutliers">
+          <Option type="Map">
+            <Option type="QString" name="parameter_name" value="2ndrasterwithoutliers"/>
+            <Option type="int" name="source" value="0"/>
+          </Option>
+        </Option>
+        <Option type="List" name="formula">
+          <Option type="Map">
+            <Option type="QString" name="parameter_name" value="formula"/>
+            <Option type="int" name="source" value="0"/>
+          </Option>
+        </Option>
+        <Option type="List" name="referencerastera">
+          <Option type="Map">
+            <Option type="QString" name="parameter_name" value="referencerastera"/>
+            <Option type="int" name="source" value="0"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="model:Fix Outliers_3">
+      <Option type="bool" name="active" value="true"/>
+      <Option name="alg_config"/>
+      <Option type="QString" name="alg_id" value="model:Fix Outliers"/>
+      <Option type="QString" name="component_description" value="Fix Outliers of 3rd Raster"/>
+      <Option type="double" name="component_pos_x" value="181.33333333333323"/>
+      <Option type="double" name="component_pos_y" value="487.3333333333332"/>
+      <Option name="dependencies"/>
+      <Option type="QString" name="id" value="model:Fix Outliers_3"/>
+      <Option name="outputs"/>
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="1strasterwithoutliers">
+          <Option type="Map">
+            <Option type="QString" name="parameter_name" value="3rdrasterwithoutliers"/>
+            <Option type="int" name="source" value="0"/>
+          </Option>
+        </Option>
+        <Option type="List" name="formula">
+          <Option type="Map">
+            <Option type="QString" name="parameter_name" value="formula"/>
+            <Option type="int" name="source" value="0"/>
+          </Option>
+        </Option>
+        <Option type="List" name="referencerastera">
+          <Option type="Map">
+            <Option type="QString" name="parameter_name" value="referencerastera"/>
+            <Option type="int" name="source" value="0"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="help"/>
+  <Option type="QString" name="model_group" value=""/>
+  <Option type="QString" name="model_name" value="Fix Outliers 3x (Restart QGIS if Error)"/>
+  <Option type="Map" name="parameterDefinitions">
+    <Option type="Map" name="1strasterwithoutliers">
+      <Option type="invalid" name="default"/>
+      <Option type="QString" name="description" value="1st Raster with Outliers (b)"/>
+      <Option type="int" name="flags" value="0"/>
+      <Option name="metadata"/>
+      <Option type="QString" name="name" value="1strasterwithoutliers"/>
+      <Option type="QString" name="parameter_type" value="raster"/>
+    </Option>
+    <Option type="Map" name="2ndrasterwithoutliers">
+      <Option type="invalid" name="default"/>
+      <Option type="QString" name="description" value="2nd Raster with Outliers (b)"/>
+      <Option type="int" name="flags" value="0"/>
+      <Option name="metadata"/>
+      <Option type="QString" name="name" value="2ndrasterwithoutliers"/>
+      <Option type="QString" name="parameter_type" value="raster"/>
+    </Option>
+    <Option type="Map" name="3rdrasterwithoutliers">
+      <Option type="invalid" name="default"/>
+      <Option type="QString" name="description" value="3rd Raster with Outliers (b)"/>
+      <Option type="int" name="flags" value="0"/>
+      <Option name="metadata"/>
+      <Option type="QString" name="name" value="3rdrasterwithoutliers"/>
+      <Option type="QString" name="parameter_type" value="raster"/>
+    </Option>
+    <Option type="Map" name="formula">
+      <Option type="QString" name="default" value="ifelse(a = nodata(), b > 2000, and(b > 2000, b > (5*a)))"/>
+      <Option type="QString" name="description" value="Formula"/>
+      <Option type="int" name="flags" value="0"/>
+      <Option name="metadata"/>
+      <Option type="bool" name="multiline" value="false"/>
+      <Option type="QString" name="name" value="formula"/>
+      <Option type="QString" name="parameter_type" value="string"/>
+    </Option>
+    <Option type="Map" name="gdal:translate_1:Output 1st">
+      <Option type="bool" name="create_by_default" value="true"/>
+      <Option type="invalid" name="default"/>
+      <Option type="QString" name="description" value="Output 1st"/>
+      <Option type="int" name="flags" value="0"/>
+      <Option name="metadata"/>
+      <Option type="QString" name="name" value="gdal:translate_1:Output 1st"/>
+      <Option type="QString" name="parameter_type" value="rasterDestination"/>
+      <Option type="bool" name="supports_non_file_outputs" value="false"/>
+    </Option>
+    <Option type="Map" name="gdal:translate_2:Output 2nd">
+      <Option type="bool" name="create_by_default" value="true"/>
+      <Option type="invalid" name="default"/>
+      <Option type="QString" name="description" value="Output 2nd"/>
+      <Option type="int" name="flags" value="0"/>
+      <Option name="metadata"/>
+      <Option type="QString" name="name" value="gdal:translate_2:Output 2nd"/>
+      <Option type="QString" name="parameter_type" value="rasterDestination"/>
+      <Option type="bool" name="supports_non_file_outputs" value="false"/>
+    </Option>
+    <Option type="Map" name="gdal:translate_3:Output 3rd">
+      <Option type="bool" name="create_by_default" value="true"/>
+      <Option type="invalid" name="default"/>
+      <Option type="QString" name="description" value="Output 3rd"/>
+      <Option type="int" name="flags" value="0"/>
+      <Option name="metadata"/>
+      <Option type="QString" name="name" value="gdal:translate_3:Output 3rd"/>
+      <Option type="QString" name="parameter_type" value="rasterDestination"/>
+      <Option type="bool" name="supports_non_file_outputs" value="false"/>
+    </Option>
+    <Option type="Map" name="referencerastera">
+      <Option type="invalid" name="default"/>
+      <Option type="QString" name="description" value="Reference Raster (a)"/>
+      <Option type="int" name="flags" value="0"/>
+      <Option name="metadata"/>
+      <Option type="QString" name="name" value="referencerastera"/>
+      <Option type="QString" name="parameter_type" value="raster"/>
+    </Option>
+  </Option>
+  <Option type="Map" name="parameters">
+    <Option type="Map" name="1strasterwithoutliers">
+      <Option type="QString" name="component_description" value="1strasterwithoutliers"/>
+      <Option type="double" name="component_pos_x" value="152"/>
+      <Option type="double" name="component_pos_y" value="49.333333333333428"/>
+      <Option type="QString" name="name" value="1strasterwithoutliers"/>
+    </Option>
+    <Option type="Map" name="2ndrasterwithoutliers">
+      <Option type="QString" name="component_description" value="2ndrasterwithoutliers"/>
+      <Option type="double" name="component_pos_x" value="152.00000000000034"/>
+      <Option type="double" name="component_pos_y" value="102.00000000000001"/>
+      <Option type="QString" name="name" value="2ndrasterwithoutliers"/>
+    </Option>
+    <Option type="Map" name="3rdrasterwithoutliers">
+      <Option type="QString" name="component_description" value="3rdrasterwithoutliers"/>
+      <Option type="double" name="component_pos_x" value="150.66666666666708"/>
+      <Option type="double" name="component_pos_y" value="155.33333333333331"/>
+      <Option type="QString" name="name" value="3rdrasterwithoutliers"/>
+    </Option>
+    <Option type="Map" name="formula">
+      <Option type="QString" name="component_description" value="formula"/>
+      <Option type="double" name="component_pos_x" value="623.33333333333371"/>
+      <Option type="double" name="component_pos_y" value="47.333333333333357"/>
+      <Option type="QString" name="name" value="formula"/>
+    </Option>
+    <Option type="Map" name="referencerastera">
+      <Option type="QString" name="component_description" value="referencerastera"/>
+      <Option type="double" name="component_pos_x" value="385.33333333333331"/>
+      <Option type="double" name="component_pos_y" value="48.666666666666814"/>
+      <Option type="QString" name="name" value="referencerastera"/>
+    </Option>
+  </Option>
+</Option>

@@ -1,0 +1,137 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option type="Map" name="children">
+    <Option type="Map" name="saga:rastercalculator_1">
+      <Option type="bool" name="active" value="true"/>
+      <Option name="alg_config"/>
+      <Option type="QString" name="alg_id" value="saga:rastercalculator"/>
+      <Option type="QString" name="component_description" value="Raster calculator"/>
+      <Option type="double" name="component_pos_x" value="460.00000000000011"/>
+      <Option type="double" name="component_pos_y" value="275.33333333333331"/>
+      <Option name="dependencies"/>
+      <Option type="QString" name="id" value="saga:rastercalculator_1"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="Outliers">
+          <Option type="QString" name="child_id" value="saga:rastercalculator_1"/>
+          <Option type="QString" name="component_description" value="Outliers"/>
+          <Option type="double" name="component_pos_x" value="381.33333333333348"/>
+          <Option type="double" name="component_pos_y" value="402.33333333333326"/>
+          <Option type="Map" name="default_value">
+            <Option type="QString" name="class" value="QgsProcessingOutputLayerDefinition"/>
+            <Option type="Map" name="create_options">
+              <Option type="QString" name="fileEncoding" value="System"/>
+            </Option>
+            <Option type="Map" name="sink">
+              <Option type="bool" name="active" value="true"/>
+              <Option type="int" name="type" value="1"/>
+              <Option type="QString" name="val" value=""/>
+            </Option>
+          </Option>
+          <Option type="bool" name="mandatory" value="true"/>
+          <Option type="QString" name="name" value="Outliers"/>
+          <Option type="QString" name="output_name" value="RESULT"/>
+        </Option>
+      </Option>
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="FORMULA">
+          <Option type="Map">
+            <Option type="QString" name="parameter_name" value="formula"/>
+            <Option type="int" name="source" value="0"/>
+          </Option>
+        </Option>
+        <Option type="List" name="GRIDS">
+          <Option type="Map">
+            <Option type="QString" name="parameter_name" value="referencelayera"/>
+            <Option type="int" name="source" value="0"/>
+          </Option>
+        </Option>
+        <Option type="List" name="RESAMPLING">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="int" name="static_value" value="0"/>
+          </Option>
+        </Option>
+        <Option type="List" name="TYPE">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="int" name="static_value" value="7"/>
+          </Option>
+        </Option>
+        <Option type="List" name="USE_NODATA">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="bool" name="static_value" value="true"/>
+          </Option>
+        </Option>
+        <Option type="List" name="XGRIDS">
+          <Option type="Map">
+            <Option type="QString" name="parameter_name" value="rasterwithoutliersb"/>
+            <Option type="int" name="source" value="0"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="help"/>
+  <Option type="QString" name="model_group" value=""/>
+  <Option type="QString" name="model_name" value="Find Outliers"/>
+  <Option type="Map" name="parameterDefinitions">
+    <Option type="Map" name="formula">
+      <Option type="QString" name="default" value="ifelse(a = nodata(), b > 2000, and(b > 2000, b > (5*a)))"/>
+      <Option type="QString" name="description" value="Formula"/>
+      <Option type="int" name="flags" value="0"/>
+      <Option name="metadata"/>
+      <Option type="bool" name="multiline" value="false"/>
+      <Option type="QString" name="name" value="formula"/>
+      <Option type="QString" name="parameter_type" value="string"/>
+    </Option>
+    <Option type="Map" name="rasterwithoutliersb">
+      <Option type="invalid" name="default"/>
+      <Option type="QString" name="description" value="Raster with outliers (b)"/>
+      <Option type="int" name="flags" value="0"/>
+      <Option name="metadata"/>
+      <Option type="QString" name="name" value="rasterwithoutliersb"/>
+      <Option type="QString" name="parameter_type" value="raster"/>
+    </Option>
+    <Option type="Map" name="referencelayera">
+      <Option type="invalid" name="default"/>
+      <Option type="QString" name="description" value="Reference raster (a)"/>
+      <Option type="int" name="flags" value="0"/>
+      <Option name="metadata"/>
+      <Option type="QString" name="name" value="referencelayera"/>
+      <Option type="QString" name="parameter_type" value="raster"/>
+    </Option>
+    <Option type="Map" name="saga:rastercalculator_1:Outliers">
+      <Option type="bool" name="create_by_default" value="true"/>
+      <Option name="default"/>
+      <Option type="QString" name="description" value="Outliers"/>
+      <Option type="int" name="flags" value="0"/>
+      <Option name="metadata"/>
+      <Option type="QString" name="name" value="saga:rastercalculator_1:Outliers"/>
+      <Option type="QString" name="parameter_type" value="rasterDestination"/>
+      <Option type="bool" name="supports_non_file_outputs" value="false"/>
+    </Option>
+  </Option>
+  <Option type="Map" name="parameters">
+    <Option type="Map" name="formula">
+      <Option type="QString" name="component_description" value="formula"/>
+      <Option type="double" name="component_pos_x" value="147.99999999999997"/>
+      <Option type="double" name="component_pos_y" value="167.33333333333331"/>
+      <Option type="QString" name="name" value="formula"/>
+    </Option>
+    <Option type="Map" name="rasterwithoutliersb">
+      <Option type="QString" name="component_description" value="rasterwithoutliersb"/>
+      <Option type="double" name="component_pos_x" value="150.00000000000006"/>
+      <Option type="double" name="component_pos_y" value="106.66666666666666"/>
+      <Option type="QString" name="name" value="rasterwithoutliersb"/>
+    </Option>
+    <Option type="Map" name="referencelayera">
+      <Option type="QString" name="component_description" value="referencelayera"/>
+      <Option type="double" name="component_pos_x" value="145.33333333333334"/>
+      <Option type="double" name="component_pos_y" value="45.333333333333321"/>
+      <Option type="QString" name="name" value="referencelayera"/>
+    </Option>
+  </Option>
+</Option>

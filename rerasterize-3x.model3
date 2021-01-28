@@ -1,0 +1,267 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option type="Map" name="children">
+    <Option type="Map" name="model:Rerasterize Raster_1">
+      <Option type="bool" name="active" value="true"/>
+      <Option name="alg_config"/>
+      <Option type="QString" name="alg_id" value="model:Rerasterize Raster"/>
+      <Option type="QString" name="component_description" value="Rerasterize 1st Raster"/>
+      <Option type="double" name="component_pos_x" value="408.66666666666663"/>
+      <Option type="double" name="component_pos_y" value="113.33333333333331"/>
+      <Option name="dependencies"/>
+      <Option type="QString" name="id" value="model:Rerasterize Raster_1"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="1st Output">
+          <Option type="QString" name="child_id" value="model:Rerasterize Raster_1"/>
+          <Option type="QString" name="component_description" value="1st Output"/>
+          <Option type="double" name="component_pos_x" value="608.66666666666663"/>
+          <Option type="double" name="component_pos_y" value="158.33333333333331"/>
+          <Option type="invalid" name="default_value"/>
+          <Option type="bool" name="mandatory" value="false"/>
+          <Option type="QString" name="name" value="1st Output"/>
+          <Option type="QString" name="output_name" value="gdal:rasterize_1:Output"/>
+        </Option>
+      </Option>
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="gridraster">
+          <Option type="Map">
+            <Option type="QString" name="parameter_name" value="gridraster"/>
+            <Option type="int" name="source" value="0"/>
+          </Option>
+        </Option>
+        <Option type="List" name="rastertoreraster">
+          <Option type="Map">
+            <Option type="QString" name="parameter_name" value="1straster"/>
+            <Option type="int" name="source" value="0"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="model:Rerasterize Raster_2">
+      <Option type="bool" name="active" value="true"/>
+      <Option name="alg_config"/>
+      <Option type="QString" name="alg_id" value="model:Rerasterize Raster"/>
+      <Option type="QString" name="component_description" value="Rerasterize 2nd Raster"/>
+      <Option type="double" name="component_pos_x" value="410"/>
+      <Option type="double" name="component_pos_y" value="226.66666666666669"/>
+      <Option name="dependencies"/>
+      <Option type="QString" name="id" value="model:Rerasterize Raster_2"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="2nd Output">
+          <Option type="QString" name="child_id" value="model:Rerasterize Raster_2"/>
+          <Option type="QString" name="component_description" value="2nd Output"/>
+          <Option type="double" name="component_pos_x" value="610"/>
+          <Option type="double" name="component_pos_y" value="271.66666666666669"/>
+          <Option type="invalid" name="default_value"/>
+          <Option type="bool" name="mandatory" value="false"/>
+          <Option type="QString" name="name" value="2nd Output"/>
+          <Option type="QString" name="output_name" value="gdal:rasterize_1:Output"/>
+        </Option>
+      </Option>
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="gridraster">
+          <Option type="Map">
+            <Option type="QString" name="parameter_name" value="gridraster"/>
+            <Option type="int" name="source" value="0"/>
+          </Option>
+        </Option>
+        <Option type="List" name="rastertoreraster">
+          <Option type="Map">
+            <Option type="QString" name="parameter_name" value="2ndraster"/>
+            <Option type="int" name="source" value="0"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="model:Rerasterize Raster_3">
+      <Option type="bool" name="active" value="true"/>
+      <Option name="alg_config"/>
+      <Option type="QString" name="alg_id" value="model:Rerasterize Raster"/>
+      <Option type="QString" name="component_description" value="Rerasterize 3rd Raster"/>
+      <Option type="double" name="component_pos_x" value="412"/>
+      <Option type="double" name="component_pos_y" value="342.00000000000011"/>
+      <Option name="dependencies"/>
+      <Option type="QString" name="id" value="model:Rerasterize Raster_3"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="3rd Output">
+          <Option type="QString" name="child_id" value="model:Rerasterize Raster_3"/>
+          <Option type="QString" name="component_description" value="3rd Output"/>
+          <Option type="double" name="component_pos_x" value="612"/>
+          <Option type="double" name="component_pos_y" value="387.00000000000011"/>
+          <Option type="invalid" name="default_value"/>
+          <Option type="bool" name="mandatory" value="false"/>
+          <Option type="QString" name="name" value="3rd Output"/>
+          <Option type="QString" name="output_name" value="gdal:rasterize_1:Output"/>
+        </Option>
+      </Option>
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="gridraster">
+          <Option type="Map">
+            <Option type="QString" name="parameter_name" value="gridraster"/>
+            <Option type="int" name="source" value="0"/>
+          </Option>
+        </Option>
+        <Option type="List" name="rastertoreraster">
+          <Option type="Map">
+            <Option type="QString" name="parameter_name" value="3rdraster"/>
+            <Option type="int" name="source" value="0"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="native:pixelstopolygons_1">
+      <Option type="bool" name="active" value="true"/>
+      <Option name="alg_config"/>
+      <Option type="QString" name="alg_id" value="native:pixelstopolygons"/>
+      <Option type="QString" name="component_description" value="Raster pixels to polygons"/>
+      <Option type="double" name="component_pos_x" value="412.66666666666652"/>
+      <Option type="double" name="component_pos_y" value="456.00000000000011"/>
+      <Option name="dependencies"/>
+      <Option type="QString" name="id" value="native:pixelstopolygons_1"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="Vector Grid">
+          <Option type="QString" name="child_id" value="native:pixelstopolygons_1"/>
+          <Option type="QString" name="component_description" value="Vector Grid"/>
+          <Option type="double" name="component_pos_x" value="611.33333333333337"/>
+          <Option type="double" name="component_pos_y" value="509.66666666666686"/>
+          <Option type="invalid" name="default_value"/>
+          <Option type="bool" name="mandatory" value="false"/>
+          <Option type="QString" name="name" value="Vector Grid"/>
+          <Option type="QString" name="output_name" value="OUTPUT"/>
+        </Option>
+      </Option>
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="FIELD_NAME">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value="VALUE"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT_RASTER">
+          <Option type="Map">
+            <Option type="QString" name="parameter_name" value="gridraster"/>
+            <Option type="int" name="source" value="0"/>
+          </Option>
+        </Option>
+        <Option type="List" name="RASTER_BAND">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value="1"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="help"/>
+  <Option type="QString" name="model_group" value=""/>
+  <Option type="QString" name="model_name" value="Rerasterize Raster 3x"/>
+  <Option type="Map" name="parameterDefinitions">
+    <Option type="Map" name="1straster">
+      <Option type="invalid" name="default"/>
+      <Option type="QString" name="description" value="1st Raster"/>
+      <Option type="int" name="flags" value="0"/>
+      <Option name="metadata"/>
+      <Option type="QString" name="name" value="1straster"/>
+      <Option type="QString" name="parameter_type" value="raster"/>
+    </Option>
+    <Option type="Map" name="2ndraster">
+      <Option type="invalid" name="default"/>
+      <Option type="QString" name="description" value="2nd Raster"/>
+      <Option type="int" name="flags" value="0"/>
+      <Option name="metadata"/>
+      <Option type="QString" name="name" value="2ndraster"/>
+      <Option type="QString" name="parameter_type" value="raster"/>
+    </Option>
+    <Option type="Map" name="3rdraster">
+      <Option type="invalid" name="default"/>
+      <Option type="QString" name="description" value="3rd Raster"/>
+      <Option type="int" name="flags" value="0"/>
+      <Option name="metadata"/>
+      <Option type="QString" name="name" value="3rdraster"/>
+      <Option type="QString" name="parameter_type" value="raster"/>
+    </Option>
+    <Option type="Map" name="gridraster">
+      <Option type="invalid" name="default"/>
+      <Option type="QString" name="description" value="Grid Raster"/>
+      <Option type="int" name="flags" value="0"/>
+      <Option name="metadata"/>
+      <Option type="QString" name="name" value="gridraster"/>
+      <Option type="QString" name="parameter_type" value="raster"/>
+    </Option>
+    <Option type="Map" name="model:Rerasterize Raster_1:1st Output">
+      <Option type="bool" name="create_by_default" value="true"/>
+      <Option type="invalid" name="default"/>
+      <Option type="QString" name="description" value="1st Output"/>
+      <Option type="int" name="flags" value="0"/>
+      <Option name="metadata"/>
+      <Option type="QString" name="name" value="model:Rerasterize Raster_1:1st Output"/>
+      <Option type="QString" name="parameter_type" value="rasterDestination"/>
+      <Option type="bool" name="supports_non_file_outputs" value="true"/>
+    </Option>
+    <Option type="Map" name="model:Rerasterize Raster_2:2nd Output">
+      <Option type="bool" name="create_by_default" value="true"/>
+      <Option type="invalid" name="default"/>
+      <Option type="QString" name="description" value="2nd Output"/>
+      <Option type="int" name="flags" value="0"/>
+      <Option name="metadata"/>
+      <Option type="QString" name="name" value="model:Rerasterize Raster_2:2nd Output"/>
+      <Option type="QString" name="parameter_type" value="rasterDestination"/>
+      <Option type="bool" name="supports_non_file_outputs" value="true"/>
+    </Option>
+    <Option type="Map" name="model:Rerasterize Raster_3:3rd Output">
+      <Option type="bool" name="create_by_default" value="true"/>
+      <Option type="invalid" name="default"/>
+      <Option type="QString" name="description" value="3rd Output"/>
+      <Option type="int" name="flags" value="0"/>
+      <Option name="metadata"/>
+      <Option type="QString" name="name" value="model:Rerasterize Raster_3:3rd Output"/>
+      <Option type="QString" name="parameter_type" value="rasterDestination"/>
+      <Option type="bool" name="supports_non_file_outputs" value="true"/>
+    </Option>
+    <Option type="Map" name="native:pixelstopolygons_1:Vector Grid">
+      <Option type="bool" name="create_by_default" value="true"/>
+      <Option type="int" name="data_type" value="2"/>
+      <Option type="invalid" name="default"/>
+      <Option type="QString" name="description" value="Vector Grid"/>
+      <Option type="int" name="flags" value="0"/>
+      <Option name="metadata"/>
+      <Option type="QString" name="name" value="native:pixelstopolygons_1:Vector Grid"/>
+      <Option type="QString" name="parameter_type" value="sink"/>
+      <Option type="bool" name="supports_non_file_outputs" value="true"/>
+    </Option>
+  </Option>
+  <Option type="Map" name="parameters">
+    <Option type="Map" name="1straster">
+      <Option type="QString" name="component_description" value="1straster"/>
+      <Option type="double" name="component_pos_x" value="133.33333333333331"/>
+      <Option type="double" name="component_pos_y" value="109.99999999999999"/>
+      <Option type="QString" name="name" value="1straster"/>
+    </Option>
+    <Option type="Map" name="2ndraster">
+      <Option type="QString" name="component_description" value="2ndraster"/>
+      <Option type="double" name="component_pos_x" value="133.33333333333334"/>
+      <Option type="double" name="component_pos_y" value="169.33333333333331"/>
+      <Option type="QString" name="name" value="2ndraster"/>
+    </Option>
+    <Option type="Map" name="3rdraster">
+      <Option type="QString" name="component_description" value="3rdraster"/>
+      <Option type="double" name="component_pos_x" value="132"/>
+      <Option type="double" name="component_pos_y" value="228"/>
+      <Option type="QString" name="name" value="3rdraster"/>
+    </Option>
+    <Option type="Map" name="gridraster">
+      <Option type="QString" name="component_description" value="gridraster"/>
+      <Option type="double" name="component_pos_x" value="133.33333333333334"/>
+      <Option type="double" name="component_pos_y" value="47.333333333333329"/>
+      <Option type="QString" name="name" value="gridraster"/>
+    </Option>
+  </Option>
+</Option>

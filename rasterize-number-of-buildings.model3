@@ -1,0 +1,299 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option type="Map" name="children">
+    <Option type="Map" name="model:Create Grid of Region Layer (-at -i)_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="model:Create Grid of Region Layer (-at -i)" type="QString" name="alg_id"/>
+      <Option value="Create Grid of Region Layer (-at -i)" type="QString" name="component_description"/>
+      <Option value="417.33333333333337" type="double" name="component_pos_x"/>
+      <Option value="100.66666666666666" type="double" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option value="model:Create Grid of Region Layer (-at -i)_1" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="hmm">
+          <Option type="Map">
+            <Option value="gridsize" type="QString" name="parameter_name"/>
+            <Option value="0" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="inputregionlayer2">
+          <Option type="Map">
+            <Option value="inputlau19layer" type="QString" name="parameter_name"/>
+            <Option value="0" type="int" name="source"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="model:Rasterize Field (-at -i)_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="model:Rasterize Field (-at -i)" type="QString" name="alg_id"/>
+      <Option value="Rasterize Field (-at -i)" type="QString" name="component_description"/>
+      <Option value="415.3333333333332" type="double" name="component_pos_x"/>
+      <Option value="602.66666666666674" type="double" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option value="model:Rasterize Field (-at -i)_1" type="QString" name="id"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="Centroid Count">
+          <Option value="model:Rasterize Field (-at -i)_1" type="QString" name="child_id"/>
+          <Option value="Centroid Count" type="QString" name="component_description"/>
+          <Option value="694" type="double" name="component_pos_x"/>
+          <Option value="637" type="double" name="component_pos_y"/>
+          <Option type="invalid" name="default_value"/>
+          <Option value="false" type="bool" name="mandatory"/>
+          <Option value="Centroid Count" type="QString" name="name"/>
+          <Option value="gdal:rasterize_1:Output Raster" type="QString" name="output_name"/>
+        </Option>
+      </Option>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="fieldtoraster">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="fid_count" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="hmm">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="100" type="double" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="inputextentlayer">
+          <Option type="Map">
+            <Option value="inputlau19layer" type="QString" name="parameter_name"/>
+            <Option value="0" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="inputregionlayer2">
+          <Option type="Map">
+            <Option value="qgis:joinbylocationsummary_1" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="native:centroids_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="native:centroids" type="QString" name="alg_id"/>
+      <Option value="Centroids" type="QString" name="component_description"/>
+      <Option value="416.66666666666652" type="double" name="component_pos_x"/>
+      <Option value="201.33333333333326" type="double" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option value="native:centroids_1" type="QString" name="id"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="Centroids">
+          <Option value="native:centroids_1" type="QString" name="child_id"/>
+          <Option value="Centroids" type="QString" name="component_description"/>
+          <Option value="694.66666666666674" type="double" name="component_pos_x"/>
+          <Option value="250.33333333333326" type="double" name="component_pos_y"/>
+          <Option type="invalid" name="default_value"/>
+          <Option value="false" type="bool" name="mandatory"/>
+          <Option value="Centroids" type="QString" name="name"/>
+          <Option value="OUTPUT" type="QString" name="output_name"/>
+        </Option>
+      </Option>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="ALL_PARTS">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="false" type="bool" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="inputbuildinglayer" type="QString" name="parameter_name"/>
+            <Option value="0" type="int" name="source"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="qgis:createspatialindex_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="qgis:createspatialindex" type="QString" name="alg_id"/>
+      <Option value="Create spatial index for Grid" type="QString" name="component_description"/>
+      <Option value="412.00000000000006" type="double" name="component_pos_x"/>
+      <Option value="310" type="double" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option value="qgis:createspatialindex_1" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="model:Create Grid of Region Layer (-at -i)_1" type="QString" name="child_id"/>
+            <Option value="native:clip_1:Output Vector Grid Clipped" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="qgis:createspatialindex_2">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="qgis:createspatialindex" type="QString" name="alg_id"/>
+      <Option value="Create spatial index for Centroids" type="QString" name="component_description"/>
+      <Option value="412.66666666666646" type="double" name="component_pos_x"/>
+      <Option value="393.33333333333326" type="double" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option value="qgis:createspatialindex_2" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="native:centroids_1" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="qgis:joinbylocationsummary_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="qgis:joinbylocationsummary" type="QString" name="alg_id"/>
+      <Option value="Join attributes by location (summary)" type="QString" name="component_description"/>
+      <Option value="415.33333333333326" type="double" name="component_pos_x"/>
+      <Option value="496" type="double" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option value="qgis:joinbylocationsummary_1" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="DISCARD_NONMATCHING">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="false" type="bool" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="qgis:createspatialindex_1" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="JOIN">
+          <Option type="Map">
+            <Option value="qgis:createspatialindex_2" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="JOIN_FIELDS">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="fid" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="PREDICATE">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="1" type="int" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="SUMMARIES">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="0" type="int" name="static_value"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="help"/>
+  <Option value="" type="QString" name="model_group"/>
+  <Option value="Rasterize Number of Buildings" type="QString" name="model_name"/>
+  <Option type="Map" name="parameterDefinitions">
+    <Option type="Map" name="gridsize">
+      <Option value="1" type="int" name="data_type"/>
+      <Option value="100" type="QString" name="default"/>
+      <Option value="9" type="int" name="default_unit"/>
+      <Option value="Output Grid Size" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option value="100000" type="double" name="max"/>
+      <Option name="metadata"/>
+      <Option value="0" type="double" name="min"/>
+      <Option value="gridsize" type="QString" name="name"/>
+      <Option value="distance" type="QString" name="parameter_type"/>
+      <Option value="inputlau19layer" type="QString" name="parent"/>
+    </Option>
+    <Option type="Map" name="inputbuildinglayer">
+      <Option type="List" name="data_types">
+        <Option value="2" type="int"/>
+      </Option>
+      <Option type="invalid" name="default"/>
+      <Option value="Input Building Layer" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option name="metadata"/>
+      <Option value="inputbuildinglayer" type="QString" name="name"/>
+      <Option value="vector" type="QString" name="parameter_type"/>
+    </Option>
+    <Option type="Map" name="inputlau19layer">
+      <Option type="List" name="data_types">
+        <Option value="2" type="int"/>
+      </Option>
+      <Option type="invalid" name="default"/>
+      <Option value="Input Region Layer" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option name="metadata"/>
+      <Option value="inputlau19layer" type="QString" name="name"/>
+      <Option value="vector" type="QString" name="parameter_type"/>
+    </Option>
+    <Option type="Map" name="model:Rasterize Field (-at -i)_1:Centroid Count">
+      <Option value="true" type="bool" name="create_by_default"/>
+      <Option type="invalid" name="default"/>
+      <Option value="Centroid Count" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option name="metadata"/>
+      <Option value="model:Rasterize Field (-at -i)_1:Centroid Count" type="QString" name="name"/>
+      <Option value="rasterDestination" type="QString" name="parameter_type"/>
+      <Option value="true" type="bool" name="supports_non_file_outputs"/>
+    </Option>
+    <Option type="Map" name="native:centroids_1:Centroids">
+      <Option value="true" type="bool" name="create_by_default"/>
+      <Option value="0" type="int" name="data_type"/>
+      <Option type="invalid" name="default"/>
+      <Option value="Centroids" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option name="metadata"/>
+      <Option value="native:centroids_1:Centroids" type="QString" name="name"/>
+      <Option value="sink" type="QString" name="parameter_type"/>
+      <Option value="true" type="bool" name="supports_non_file_outputs"/>
+    </Option>
+  </Option>
+  <Option type="Map" name="parameters">
+    <Option type="Map" name="gridsize">
+      <Option value="gridsize" type="QString" name="component_description"/>
+      <Option value="134.66666666666663" type="double" name="component_pos_x"/>
+      <Option value="117.33333333333337" type="double" name="component_pos_y"/>
+      <Option value="gridsize" type="QString" name="name"/>
+    </Option>
+    <Option type="Map" name="inputbuildinglayer">
+      <Option value="inputbuildinglayer" type="QString" name="component_description"/>
+      <Option value="131.99999999999997" type="double" name="component_pos_x"/>
+      <Option value="185.99999999999989" type="double" name="component_pos_y"/>
+      <Option value="inputbuildinglayer" type="QString" name="name"/>
+    </Option>
+    <Option type="Map" name="inputlau19layer">
+      <Option value="inputlau19layer" type="QString" name="component_description"/>
+      <Option value="133.33333333333337" type="double" name="component_pos_x"/>
+      <Option value="50" type="double" name="component_pos_y"/>
+      <Option value="inputlau19layer" type="QString" name="name"/>
+    </Option>
+  </Option>
+</Option>

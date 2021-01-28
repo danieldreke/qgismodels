@@ -87,20 +87,20 @@
       <Option value="formula" type="QString" name="name"/>
       <Option value="string" type="QString" name="parameter_type"/>
     </Option>
-    <Option type="Map" name="rasterwithoutliersb">
-      <Option type="invalid" name="default"/>
-      <Option value="Raster with Outliers (b)" type="QString" name="description"/>
-      <Option value="0" type="int" name="flags"/>
-      <Option name="metadata"/>
-      <Option value="rasterwithoutliersb" type="QString" name="name"/>
-      <Option value="raster" type="QString" name="parameter_type"/>
-    </Option>
     <Option type="Map" name="referencelayera">
       <Option type="invalid" name="default"/>
       <Option value="Reference Raster (a)" type="QString" name="description"/>
       <Option value="0" type="int" name="flags"/>
       <Option name="metadata"/>
       <Option value="referencelayera" type="QString" name="name"/>
+      <Option value="raster" type="QString" name="parameter_type"/>
+    </Option>
+    <Option type="Map" name="rasterwithoutliersb">
+      <Option type="invalid" name="default"/>
+      <Option value="Raster with Outliers (b)" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option name="metadata"/>
+      <Option value="rasterwithoutliersb" type="QString" name="name"/>
       <Option value="raster" type="QString" name="parameter_type"/>
     </Option>
     <Option type="Map" name="saga:rastercalculator_1:Outliers">
