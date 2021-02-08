@@ -1,0 +1,562 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option type="Map" name="children">
+    <Option type="Map" name="gdal:translate_1">
+      <Option type="bool" value="true" name="active"/>
+      <Option name="alg_config"/>
+      <Option type="QString" value="gdal:translate" name="alg_id"/>
+      <Option type="QString" value="Translate (convert format)" name="component_description"/>
+      <Option type="double" value="401.99999999999994" name="component_pos_x"/>
+      <Option type="double" value="641.33333333333326" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option type="QString" value="gdal:translate_1" name="id"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="Output High Heat Demand Cells">
+          <Option type="QString" value="gdal:translate_1" name="child_id"/>
+          <Option type="QString" value="Output High Heat Demand Cells" name="component_description"/>
+          <Option type="double" value="602" name="component_pos_x"/>
+          <Option type="double" value="686.33333333333326" name="component_pos_y"/>
+          <Option type="invalid" name="default_value"/>
+          <Option type="bool" value="false" name="mandatory"/>
+          <Option type="QString" value="Output High Heat Demand Cells" name="name"/>
+          <Option type="QString" value="OUTPUT" name="output_name"/>
+        </Option>
+      </Option>
+      <Option type="bool" value="true" name="outputs_collapsed"/>
+      <Option type="bool" value="true" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="COPY_SUBDATASETS">
+          <Option type="Map">
+            <Option type="int" value="2" name="source"/>
+            <Option type="bool" value="false" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="DATA_TYPE">
+          <Option type="Map">
+            <Option type="int" value="2" name="source"/>
+            <Option type="int" value="0" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option type="QString" value="saga:rastercalculator_4" name="child_id"/>
+            <Option type="QString" value="RESULT" name="output_name"/>
+            <Option type="int" value="1" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="NODATA">
+          <Option type="Map">
+            <Option type="int" value="2" name="source"/>
+            <Option type="invalid" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="OPTIONS">
+          <Option type="Map">
+            <Option type="int" value="2" name="source"/>
+            <Option type="QString" value="" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="TARGET_CRS">
+          <Option type="Map">
+            <Option type="int" value="2" name="source"/>
+            <Option type="invalid" name="static_value"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="grass7:r.neighbors_1">
+      <Option type="bool" value="true" name="active"/>
+      <Option name="alg_config"/>
+      <Option type="QString" value="grass7:r.neighbors" name="alg_id"/>
+      <Option type="QString" value="Calc Sum 9x9 r.neighbors" name="component_description"/>
+      <Option type="double" value="395.33333333333326" name="component_pos_x"/>
+      <Option type="double" value="75.3333333333333" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option type="QString" value="grass7:r.neighbors_1" name="id"/>
+      <Option name="outputs"/>
+      <Option type="bool" value="true" name="outputs_collapsed"/>
+      <Option type="bool" value="true" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="-a">
+          <Option type="Map">
+            <Option type="int" value="2" name="source"/>
+            <Option type="bool" value="false" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="-c">
+          <Option type="Map">
+            <Option type="QString" value="usecircularneighbourhood" name="parameter_name"/>
+            <Option type="int" value="0" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="GRASS_RASTER_FORMAT_META">
+          <Option type="Map">
+            <Option type="int" value="2" name="source"/>
+            <Option type="QString" value="" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="GRASS_RASTER_FORMAT_OPT">
+          <Option type="Map">
+            <Option type="int" value="2" name="source"/>
+            <Option type="QString" value="" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="GRASS_REGION_CELLSIZE_PARAMETER">
+          <Option type="Map">
+            <Option type="int" value="2" name="source"/>
+            <Option type="double" value="0" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="GRASS_REGION_PARAMETER">
+          <Option type="Map">
+            <Option type="int" value="2" name="source"/>
+            <Option type="invalid" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="gauss">
+          <Option type="Map">
+            <Option type="int" value="2" name="source"/>
+            <Option type="invalid" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="input">
+          <Option type="Map">
+            <Option type="QString" value="heatdemandinmwh100x100m" name="parameter_name"/>
+            <Option type="int" value="0" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="method">
+          <Option type="Map">
+            <Option type="int" value="2" name="source"/>
+            <Option type="int" value="6" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="quantile">
+          <Option type="Map">
+            <Option type="int" value="2" name="source"/>
+            <Option type="QString" value="" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="selection">
+          <Option type="Map">
+            <Option type="int" value="2" name="source"/>
+            <Option type="invalid" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="size">
+          <Option type="Map">
+            <Option type="int" value="2" name="source"/>
+            <Option type="int" value="9" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="weight">
+          <Option type="Map">
+            <Option type="int" value="2" name="source"/>
+            <Option type="QString" value="" name="static_value"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="grass7:r.neighbors_2">
+      <Option type="bool" value="true" name="active"/>
+      <Option name="alg_config"/>
+      <Option type="QString" value="grass7:r.neighbors" name="alg_id"/>
+      <Option type="QString" value="Calc Sum 11x11 r.neighbors" name="component_description"/>
+      <Option type="double" value="396.66666666666657" name="component_pos_x"/>
+      <Option type="double" value="165.33333333333334" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option type="QString" value="grass7:r.neighbors_2" name="id"/>
+      <Option name="outputs"/>
+      <Option type="bool" value="true" name="outputs_collapsed"/>
+      <Option type="bool" value="true" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="-a">
+          <Option type="Map">
+            <Option type="int" value="2" name="source"/>
+            <Option type="bool" value="false" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="-c">
+          <Option type="Map">
+            <Option type="QString" value="usecircularneighbourhood" name="parameter_name"/>
+            <Option type="int" value="0" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="GRASS_RASTER_FORMAT_META">
+          <Option type="Map">
+            <Option type="int" value="2" name="source"/>
+            <Option type="QString" value="" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="GRASS_RASTER_FORMAT_OPT">
+          <Option type="Map">
+            <Option type="int" value="2" name="source"/>
+            <Option type="QString" value="" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="GRASS_REGION_CELLSIZE_PARAMETER">
+          <Option type="Map">
+            <Option type="int" value="2" name="source"/>
+            <Option type="double" value="0" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="GRASS_REGION_PARAMETER">
+          <Option type="Map">
+            <Option type="int" value="2" name="source"/>
+            <Option type="invalid" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="gauss">
+          <Option type="Map">
+            <Option type="int" value="2" name="source"/>
+            <Option type="invalid" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="input">
+          <Option type="Map">
+            <Option type="QString" value="heatdemandinmwh100x100m" name="parameter_name"/>
+            <Option type="int" value="0" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="method">
+          <Option type="Map">
+            <Option type="int" value="2" name="source"/>
+            <Option type="int" value="6" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="quantile">
+          <Option type="Map">
+            <Option type="int" value="2" name="source"/>
+            <Option type="QString" value="" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="selection">
+          <Option type="Map">
+            <Option type="int" value="2" name="source"/>
+            <Option type="invalid" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="size">
+          <Option type="Map">
+            <Option type="int" value="2" name="source"/>
+            <Option type="int" value="11" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="weight">
+          <Option type="Map">
+            <Option type="int" value="2" name="source"/>
+            <Option type="QString" value="" name="static_value"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="saga:rastercalculator_1">
+      <Option type="bool" value="true" name="active"/>
+      <Option name="alg_config"/>
+      <Option type="QString" value="saga:rastercalculator" name="alg_id"/>
+      <Option type="QString" value="Sum 10x10 Neighbourhood" name="component_description"/>
+      <Option type="double" value="397.99999999999977" name="component_pos_x"/>
+      <Option type="double" value="261.33333333333343" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option type="QString" value="saga:rastercalculator_1" name="id"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="Output Sum 10x10">
+          <Option type="QString" value="saga:rastercalculator_1" name="child_id"/>
+          <Option type="QString" value="Output Sum 10x10" name="component_description"/>
+          <Option type="double" value="597.99999999999977" name="component_pos_x"/>
+          <Option type="double" value="306.33333333333343" name="component_pos_y"/>
+          <Option type="invalid" name="default_value"/>
+          <Option type="bool" value="false" name="mandatory"/>
+          <Option type="QString" value="Output Sum 10x10" name="name"/>
+          <Option type="QString" value="RESULT" name="output_name"/>
+        </Option>
+      </Option>
+      <Option type="bool" value="true" name="outputs_collapsed"/>
+      <Option type="bool" value="true" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="FORMULA">
+          <Option type="Map">
+            <Option type="int" value="2" name="source"/>
+            <Option type="QString" value="(a + b) / 2" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="GRIDS">
+          <Option type="Map">
+            <Option type="QString" value="grass7:r.neighbors_1" name="child_id"/>
+            <Option type="QString" value="output" name="output_name"/>
+            <Option type="int" value="1" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="RESAMPLING">
+          <Option type="Map">
+            <Option type="int" value="2" name="source"/>
+            <Option type="int" value="0" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="TYPE">
+          <Option type="Map">
+            <Option type="int" value="2" name="source"/>
+            <Option type="int" value="7" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="USE_NODATA">
+          <Option type="Map">
+            <Option type="int" value="2" name="source"/>
+            <Option type="bool" value="true" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="XGRIDS">
+          <Option type="Map">
+            <Option type="QString" value="grass7:r.neighbors_2" name="child_id"/>
+            <Option type="QString" value="output" name="output_name"/>
+            <Option type="int" value="1" name="source"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="saga:rastercalculator_2">
+      <Option type="bool" value="true" name="active"/>
+      <Option name="alg_config"/>
+      <Option type="QString" value="saga:rastercalculator" name="alg_id"/>
+      <Option type="QString" value="Input GWh Raster" name="component_description"/>
+      <Option type="double" value="401.3333333333332" name="component_pos_x"/>
+      <Option type="double" value="352" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option type="QString" value="saga:rastercalculator_2" name="id"/>
+      <Option name="outputs"/>
+      <Option type="bool" value="true" name="outputs_collapsed"/>
+      <Option type="bool" value="true" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="FORMULA">
+          <Option type="Map">
+            <Option type="QString" value="gwh1000x1000m" name="parameter_name"/>
+            <Option type="int" value="0" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="GRIDS">
+          <Option type="Map">
+            <Option type="QString" value="heatdemandinmwh100x100m" name="parameter_name"/>
+            <Option type="int" value="0" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="RESAMPLING">
+          <Option type="Map">
+            <Option type="int" value="2" name="source"/>
+            <Option type="int" value="0" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="TYPE">
+          <Option type="Map">
+            <Option type="int" value="2" name="source"/>
+            <Option type="int" value="7" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="USE_NODATA">
+          <Option type="Map">
+            <Option type="int" value="2" name="source"/>
+            <Option type="bool" value="true" name="static_value"/>
+          </Option>
+        </Option>
+        <Option name="XGRIDS"/>
+      </Option>
+    </Option>
+    <Option type="Map" name="saga:rastercalculator_3">
+      <Option type="bool" value="true" name="active"/>
+      <Option name="alg_config"/>
+      <Option type="QString" value="saga:rastercalculator" name="alg_id"/>
+      <Option type="QString" value="High Heat Demand Areas" name="component_description"/>
+      <Option type="double" value="399.99999999999983" name="component_pos_x"/>
+      <Option type="double" value="446.66666666666674" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option type="QString" value="saga:rastercalculator_3" name="id"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="Output HDA yes/no">
+          <Option type="QString" value="saga:rastercalculator_3" name="child_id"/>
+          <Option type="QString" value="Output HDA yes/no" name="component_description"/>
+          <Option type="double" value="599.99999999999977" name="component_pos_x"/>
+          <Option type="double" value="491.66666666666674" name="component_pos_y"/>
+          <Option type="invalid" name="default_value"/>
+          <Option type="bool" value="false" name="mandatory"/>
+          <Option type="QString" value="Output HDA yes/no" name="name"/>
+          <Option type="QString" value="RESULT" name="output_name"/>
+        </Option>
+      </Option>
+      <Option type="bool" value="true" name="outputs_collapsed"/>
+      <Option type="bool" value="true" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="FORMULA">
+          <Option type="Map">
+            <Option type="int" value="2" name="source"/>
+            <Option type="QString" value="ifelse(a = nodata(), a, a > (b * 1000))" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="GRIDS">
+          <Option type="Map">
+            <Option type="QString" value="saga:rastercalculator_1" name="child_id"/>
+            <Option type="QString" value="RESULT" name="output_name"/>
+            <Option type="int" value="1" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="RESAMPLING">
+          <Option type="Map">
+            <Option type="int" value="2" name="source"/>
+            <Option type="int" value="0" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="TYPE">
+          <Option type="Map">
+            <Option type="int" value="2" name="source"/>
+            <Option type="int" value="7" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="USE_NODATA">
+          <Option type="Map">
+            <Option type="int" value="2" name="source"/>
+            <Option type="bool" value="true" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="XGRIDS">
+          <Option type="Map">
+            <Option type="QString" value="saga:rastercalculator_2" name="child_id"/>
+            <Option type="QString" value="RESULT" name="output_name"/>
+            <Option type="int" value="1" name="source"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="saga:rastercalculator_4">
+      <Option type="bool" value="true" name="active"/>
+      <Option name="alg_config"/>
+      <Option type="QString" value="saga:rastercalculator" name="alg_id"/>
+      <Option type="QString" value="High Heat Demand only" name="component_description"/>
+      <Option type="double" value="400" name="component_pos_x"/>
+      <Option type="double" value="542.66666666666686" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option type="QString" value="saga:rastercalculator_4" name="id"/>
+      <Option name="outputs"/>
+      <Option type="bool" value="true" name="outputs_collapsed"/>
+      <Option type="bool" value="true" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="FORMULA">
+          <Option type="Map">
+            <Option type="int" value="2" name="source"/>
+            <Option type="QString" value="ifelse(or(a = nodata(), a = 0), nodata(), ifelse(or(b = 0, b = nodata()), nodata(), a * b))" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="GRIDS">
+          <Option type="Map">
+            <Option type="QString" value="heatdemandinmwh100x100m" name="parameter_name"/>
+            <Option type="int" value="0" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="RESAMPLING">
+          <Option type="Map">
+            <Option type="int" value="2" name="source"/>
+            <Option type="int" value="0" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="TYPE">
+          <Option type="Map">
+            <Option type="int" value="2" name="source"/>
+            <Option type="int" value="7" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="USE_NODATA">
+          <Option type="Map">
+            <Option type="int" value="2" name="source"/>
+            <Option type="bool" value="true" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="XGRIDS">
+          <Option type="Map">
+            <Option type="QString" value="saga:rastercalculator_3" name="child_id"/>
+            <Option type="QString" value="RESULT" name="output_name"/>
+            <Option type="int" value="1" name="source"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="help"/>
+  <Option type="QString" value="" name="model_group"/>
+  <Option type="QString" value="Calc High Heat Demand Areas" name="model_name"/>
+  <Option type="Map" name="parameterDefinitions">
+    <Option type="Map" name="gdal:translate_1:Output High Heat Demand Cells">
+      <Option type="bool" value="true" name="create_by_default"/>
+      <Option type="invalid" name="default"/>
+      <Option type="QString" value="Output High Heat Demand Cells" name="description"/>
+      <Option type="int" value="0" name="flags"/>
+      <Option name="metadata"/>
+      <Option type="QString" value="gdal:translate_1:Output High Heat Demand Cells" name="name"/>
+      <Option type="QString" value="rasterDestination" name="parameter_type"/>
+      <Option type="bool" value="false" name="supports_non_file_outputs"/>
+    </Option>
+    <Option type="Map" name="gwh1000x1000m">
+      <Option type="int" value="1" name="data_type"/>
+      <Option type="QString" value="25" name="default"/>
+      <Option type="QString" value="Minimum Heat Demand in GWh / 1000x1000 m²" name="description"/>
+      <Option type="int" value="0" name="flags"/>
+      <Option type="double" value="1000" name="max"/>
+      <Option name="metadata"/>
+      <Option type="double" value="1" name="min"/>
+      <Option type="QString" value="gwh1000x1000m" name="name"/>
+      <Option type="QString" value="number" name="parameter_type"/>
+    </Option>
+    <Option type="Map" name="heatdemandinmwh100x100m">
+      <Option type="invalid" name="default"/>
+      <Option type="QString" value="Input Heat Demand Raster [MWh / 100x100 m²]" name="description"/>
+      <Option type="int" value="0" name="flags"/>
+      <Option name="metadata"/>
+      <Option type="QString" value="heatdemandinmwh100x100m" name="name"/>
+      <Option type="QString" value="raster" name="parameter_type"/>
+    </Option>
+    <Option type="Map" name="saga:rastercalculator_1:Output Sum 10x10">
+      <Option type="bool" value="true" name="create_by_default"/>
+      <Option type="invalid" name="default"/>
+      <Option type="QString" value="Output Sum 10x10" name="description"/>
+      <Option type="int" value="0" name="flags"/>
+      <Option name="metadata"/>
+      <Option type="QString" value="saga:rastercalculator_1:Output Sum 10x10" name="name"/>
+      <Option type="QString" value="rasterDestination" name="parameter_type"/>
+      <Option type="bool" value="false" name="supports_non_file_outputs"/>
+    </Option>
+    <Option type="Map" name="saga:rastercalculator_3:Output HDA yes/no">
+      <Option type="bool" value="true" name="create_by_default"/>
+      <Option type="invalid" name="default"/>
+      <Option type="QString" value="Output HDA yes/no" name="description"/>
+      <Option type="int" value="0" name="flags"/>
+      <Option name="metadata"/>
+      <Option type="QString" value="saga:rastercalculator_3:Output HDA yes/no" name="name"/>
+      <Option type="QString" value="rasterDestination" name="parameter_type"/>
+      <Option type="bool" value="false" name="supports_non_file_outputs"/>
+    </Option>
+    <Option type="Map" name="usecircularneighbourhood">
+      <Option type="bool" value="false" name="default"/>
+      <Option type="QString" value="Use Circular Neighbourhood" name="description"/>
+      <Option type="int" value="0" name="flags"/>
+      <Option name="metadata"/>
+      <Option type="QString" value="usecircularneighbourhood" name="name"/>
+      <Option type="QString" value="boolean" name="parameter_type"/>
+    </Option>
+  </Option>
+  <Option type="Map" name="parameters">
+    <Option type="Map" name="gwh1000x1000m">
+      <Option type="QString" value="gwh1000x1000m" name="component_description"/>
+      <Option type="double" value="135.33333333333331" name="component_pos_x"/>
+      <Option type="double" value="110.66666666666669" name="component_pos_y"/>
+      <Option type="QString" value="gwh1000x1000m" name="name"/>
+    </Option>
+    <Option type="Map" name="heatdemandinmwh100x100m">
+      <Option type="QString" value="heatdemandinmwh100x100m" name="component_description"/>
+      <Option type="double" value="135.33333333333331" name="component_pos_x"/>
+      <Option type="double" value="45.333333333333329" name="component_pos_y"/>
+      <Option type="QString" value="heatdemandinmwh100x100m" name="name"/>
+    </Option>
+    <Option type="Map" name="usecircularneighbourhood">
+      <Option type="QString" value="usecircularneighbourhood" name="component_description"/>
+      <Option type="double" value="136" name="component_pos_x"/>
+      <Option type="double" value="192" name="component_pos_y"/>
+      <Option type="QString" value="usecircularneighbourhood" name="name"/>
+    </Option>
+  </Option>
+</Option>

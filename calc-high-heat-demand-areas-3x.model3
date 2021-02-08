@@ -1,0 +1,233 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option name="children" type="Map">
+    <Option name="model:Calc High Heat Demand Areas_1" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="model:Calc High Heat Demand Areas"/>
+      <Option name="component_description" type="QString" value="Calc High Heat Demand Areas"/>
+      <Option name="component_pos_x" type="double" value="433.99999999999994"/>
+      <Option name="component_pos_y" type="double" value="120.66666666666663"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="model:Calc High Heat Demand Areas_1"/>
+      <Option name="outputs" type="Map">
+        <Option name="Output 1" type="Map">
+          <Option name="child_id" type="QString" value="model:Calc High Heat Demand Areas_1"/>
+          <Option name="component_description" type="QString" value="Output 1"/>
+          <Option name="component_pos_x" type="double" value="634"/>
+          <Option name="component_pos_y" type="double" value="165.66666666666663"/>
+          <Option name="default_value" type="invalid"/>
+          <Option name="mandatory" type="bool" value="false"/>
+          <Option name="name" type="QString" value="Output 1"/>
+          <Option name="output_name" type="QString" value="gdal:translate_1:Output High Heat Demand Cells"/>
+        </Option>
+      </Option>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="gwh1000x1000m" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" type="QString" value="mingwh"/>
+            <Option name="source" type="int" value="0"/>
+          </Option>
+        </Option>
+        <Option name="heatdemandinmwh100x100m" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" type="QString" value="input1"/>
+            <Option name="source" type="int" value="0"/>
+          </Option>
+        </Option>
+        <Option name="usecircularneighbourhood" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="bool" value="false"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="model:Calc High Heat Demand Areas_2" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="model:Calc High Heat Demand Areas"/>
+      <Option name="component_description" type="QString" value="Calc High Heat Demand Areas"/>
+      <Option name="component_pos_x" type="double" value="434"/>
+      <Option name="component_pos_y" type="double" value="229.33333333333326"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="model:Calc High Heat Demand Areas_2"/>
+      <Option name="outputs" type="Map">
+        <Option name="Output 2" type="Map">
+          <Option name="child_id" type="QString" value="model:Calc High Heat Demand Areas_2"/>
+          <Option name="component_description" type="QString" value="Output 2"/>
+          <Option name="component_pos_x" type="double" value="634"/>
+          <Option name="component_pos_y" type="double" value="274.33333333333326"/>
+          <Option name="default_value" type="invalid"/>
+          <Option name="mandatory" type="bool" value="false"/>
+          <Option name="name" type="QString" value="Output 2"/>
+          <Option name="output_name" type="QString" value="gdal:translate_1:Output High Heat Demand Cells"/>
+        </Option>
+      </Option>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="gwh1000x1000m" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" type="QString" value="mingwh"/>
+            <Option name="source" type="int" value="0"/>
+          </Option>
+        </Option>
+        <Option name="heatdemandinmwh100x100m" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" type="QString" value="input2"/>
+            <Option name="source" type="int" value="0"/>
+          </Option>
+        </Option>
+        <Option name="usecircularneighbourhood" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="bool" value="false"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="model:Calc High Heat Demand Areas_3" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="model:Calc High Heat Demand Areas"/>
+      <Option name="component_description" type="QString" value="Calc High Heat Demand Areas"/>
+      <Option name="component_pos_x" type="double" value="434"/>
+      <Option name="component_pos_y" type="double" value="344.66666666666663"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="model:Calc High Heat Demand Areas_3"/>
+      <Option name="outputs" type="Map">
+        <Option name="Output 3" type="Map">
+          <Option name="child_id" type="QString" value="model:Calc High Heat Demand Areas_3"/>
+          <Option name="component_description" type="QString" value="Output 3"/>
+          <Option name="component_pos_x" type="double" value="634"/>
+          <Option name="component_pos_y" type="double" value="389.66666666666663"/>
+          <Option name="default_value" type="invalid"/>
+          <Option name="mandatory" type="bool" value="false"/>
+          <Option name="name" type="QString" value="Output 3"/>
+          <Option name="output_name" type="QString" value="gdal:translate_1:Output High Heat Demand Cells"/>
+        </Option>
+      </Option>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="gwh1000x1000m" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" type="QString" value="mingwh"/>
+            <Option name="source" type="int" value="0"/>
+          </Option>
+        </Option>
+        <Option name="heatdemandinmwh100x100m" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" type="QString" value="input3"/>
+            <Option name="source" type="int" value="0"/>
+          </Option>
+        </Option>
+        <Option name="usecircularneighbourhood" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="bool" value="false"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="help"/>
+  <Option name="model_group" type="QString" value=""/>
+  <Option name="model_name" type="QString" value="Calc 3x High Heat Demand Areas"/>
+  <Option name="parameterDefinitions" type="Map">
+    <Option name="input1" type="Map">
+      <Option name="default" type="invalid"/>
+      <Option name="description" type="QString" value="Input 1"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="input1"/>
+      <Option name="parameter_type" type="QString" value="raster"/>
+    </Option>
+    <Option name="input2" type="Map">
+      <Option name="default" type="invalid"/>
+      <Option name="description" type="QString" value="Input 2"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="input2"/>
+      <Option name="parameter_type" type="QString" value="raster"/>
+    </Option>
+    <Option name="input3" type="Map">
+      <Option name="default" type="invalid"/>
+      <Option name="description" type="QString" value="Input 3"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="input3"/>
+      <Option name="parameter_type" type="QString" value="raster"/>
+    </Option>
+    <Option name="mingwh" type="Map">
+      <Option name="data_type" type="int" value="1"/>
+      <Option name="default" type="QString" value="25"/>
+      <Option name="description" type="QString" value="Min GWh"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="max" type="double" value="1000"/>
+      <Option name="metadata"/>
+      <Option name="min" type="double" value="1"/>
+      <Option name="name" type="QString" value="mingwh"/>
+      <Option name="parameter_type" type="QString" value="number"/>
+    </Option>
+    <Option name="model:Calc High Heat Demand Areas_1:Output 1" type="Map">
+      <Option name="create_by_default" type="bool" value="true"/>
+      <Option name="default" type="invalid"/>
+      <Option name="description" type="QString" value="Output 1"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="model:Calc High Heat Demand Areas_1:Output 1"/>
+      <Option name="parameter_type" type="QString" value="rasterDestination"/>
+      <Option name="supports_non_file_outputs" type="bool" value="true"/>
+    </Option>
+    <Option name="model:Calc High Heat Demand Areas_2:Output 2" type="Map">
+      <Option name="create_by_default" type="bool" value="true"/>
+      <Option name="default" type="invalid"/>
+      <Option name="description" type="QString" value="Output 2"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="model:Calc High Heat Demand Areas_2:Output 2"/>
+      <Option name="parameter_type" type="QString" value="rasterDestination"/>
+      <Option name="supports_non_file_outputs" type="bool" value="true"/>
+    </Option>
+    <Option name="model:Calc High Heat Demand Areas_3:Output 3" type="Map">
+      <Option name="create_by_default" type="bool" value="true"/>
+      <Option name="default" type="invalid"/>
+      <Option name="description" type="QString" value="Output 3"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="model:Calc High Heat Demand Areas_3:Output 3"/>
+      <Option name="parameter_type" type="QString" value="rasterDestination"/>
+      <Option name="supports_non_file_outputs" type="bool" value="true"/>
+    </Option>
+  </Option>
+  <Option name="parameters" type="Map">
+    <Option name="input1" type="Map">
+      <Option name="component_description" type="QString" value="input1"/>
+      <Option name="component_pos_x" type="double" value="132"/>
+      <Option name="component_pos_y" type="double" value="63.333333333333329"/>
+      <Option name="name" type="QString" value="input1"/>
+    </Option>
+    <Option name="input2" type="Map">
+      <Option name="component_description" type="QString" value="input2"/>
+      <Option name="component_pos_x" type="double" value="133.33333333333337"/>
+      <Option name="component_pos_y" type="double" value="131.33333333333331"/>
+      <Option name="name" type="QString" value="input2"/>
+    </Option>
+    <Option name="input3" type="Map">
+      <Option name="component_description" type="QString" value="input3"/>
+      <Option name="component_pos_x" type="double" value="133.3333333333334"/>
+      <Option name="component_pos_y" type="double" value="197.33333333333334"/>
+      <Option name="name" type="QString" value="input3"/>
+    </Option>
+    <Option name="mingwh" type="Map">
+      <Option name="component_description" type="QString" value="mingwh"/>
+      <Option name="component_pos_x" type="double" value="134.00000000000003"/>
+      <Option name="component_pos_y" type="double" value="279.33333333333337"/>
+      <Option name="name" type="QString" value="mingwh"/>
+    </Option>
+  </Option>
+</Option>

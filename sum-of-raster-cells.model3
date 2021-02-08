@@ -1,0 +1,143 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option type="Map" name="children">
+    <Option type="Map" name="qgis:deletecolumn_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="qgis:deletecolumn" type="QString" name="alg_id"/>
+      <Option value="Drop field(s)" type="QString" name="component_description"/>
+      <Option value="393.33333333333337" type="double" name="component_pos_x"/>
+      <Option value="361.33333333333337" type="double" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option value="qgis:deletecolumn_1" type="QString" name="id"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="Output Sum">
+          <Option value="qgis:deletecolumn_1" type="QString" name="child_id"/>
+          <Option value="Output Sum" type="QString" name="component_description"/>
+          <Option value="593.33333333333337" type="double" name="component_pos_x"/>
+          <Option value="406.33333333333337" type="double" name="component_pos_y"/>
+          <Option type="invalid" name="default_value"/>
+          <Option value="false" type="bool" name="mandatory"/>
+          <Option value="Output Sum" type="QString" name="name"/>
+          <Option value="OUTPUT" type="QString" name="output_name"/>
+        </Option>
+      </Option>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="COLUMN">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="MINX;MINY;MAXX;MAXY;CNTX;CNTY;AREA;PERIM" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="qgis:zonalstatistics_1" type="QString" name="child_id"/>
+            <Option value="INPUT_VECTOR" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="qgis:polygonfromlayerextent_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="qgis:polygonfromlayerextent" type="QString" name="alg_id"/>
+      <Option value="Extract layer extent" type="QString" name="component_description"/>
+      <Option value="390.66666666666663" type="double" name="component_pos_x"/>
+      <Option value="148" type="double" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option value="qgis:polygonfromlayerextent_1" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="inputraster" type="QString" name="parameter_name"/>
+            <Option value="0" type="int" name="source"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="qgis:zonalstatistics_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="qgis:zonalstatistics" type="QString" name="alg_id"/>
+      <Option value="Zonal statistics" type="QString" name="component_description"/>
+      <Option value="392.66666666666663" type="double" name="component_pos_x"/>
+      <Option value="260.66666666666663" type="double" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option value="qgis:zonalstatistics_1" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="COLUMN_PREFIX">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="_" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT_RASTER">
+          <Option type="Map">
+            <Option value="inputraster" type="QString" name="parameter_name"/>
+            <Option value="0" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT_VECTOR">
+          <Option type="Map">
+            <Option value="qgis:polygonfromlayerextent_1" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="RASTER_BAND">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="1" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="STATS">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="1" type="int" name="static_value"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="help"/>
+  <Option value="" type="QString" name="model_group"/>
+  <Option value="Sum of Raster Cells" type="QString" name="model_name"/>
+  <Option type="Map" name="parameterDefinitions">
+    <Option type="Map" name="inputraster">
+      <Option type="invalid" name="default"/>
+      <Option value="Input Raster" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option name="metadata"/>
+      <Option value="inputraster" type="QString" name="name"/>
+      <Option value="raster" type="QString" name="parameter_type"/>
+    </Option>
+    <Option type="Map" name="qgis:deletecolumn_1:Output Sum">
+      <Option value="true" type="bool" name="create_by_default"/>
+      <Option value="-1" type="int" name="data_type"/>
+      <Option type="invalid" name="default"/>
+      <Option value="Output Sum" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option name="metadata"/>
+      <Option value="qgis:deletecolumn_1:Output Sum" type="QString" name="name"/>
+      <Option value="sink" type="QString" name="parameter_type"/>
+      <Option value="true" type="bool" name="supports_non_file_outputs"/>
+    </Option>
+  </Option>
+  <Option type="Map" name="parameters">
+    <Option type="Map" name="inputraster">
+      <Option value="inputraster" type="QString" name="component_description"/>
+      <Option value="134.66666666666669" type="double" name="component_pos_x"/>
+      <Option value="50" type="double" name="component_pos_y"/>
+      <Option value="inputraster" type="QString" name="name"/>
+    </Option>
+  </Option>
+</Option>
