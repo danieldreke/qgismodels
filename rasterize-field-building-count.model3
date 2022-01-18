@@ -1,0 +1,185 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option name="children" type="Map">
+    <Option name="model:Rasterize Field (uint32)_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="model:Rasterize Field (uint32)" type="QString"/>
+      <Option name="component_description" value="Rasterize Field (uint32)" type="QString"/>
+      <Option name="component_pos_x" value="407.33333333333326" type="double"/>
+      <Option name="component_pos_y" value="265.99999999999994" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="model:Rasterize Field (uint32)_1" type="QString"/>
+      <Option name="outputs" type="Map">
+        <Option name="Output Raster" type="Map">
+          <Option name="child_id" value="model:Rasterize Field (uint32)_1" type="QString"/>
+          <Option name="component_description" value="Output Raster" type="QString"/>
+          <Option name="component_pos_x" value="607.33333333333326" type="double"/>
+          <Option name="component_pos_y" value="310.99999999999994" type="double"/>
+          <Option name="default_value" type="invalid"/>
+          <Option name="mandatory" value="false" type="bool"/>
+          <Option name="name" value="Output Raster" type="QString"/>
+          <Option name="output_name" value="gdal:rasterize_1:Output Raster" type="QString"/>
+        </Option>
+      </Option>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="fieldtoraster" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" value="inputfieldtoraster" type="QString"/>
+            <Option name="source" value="0" type="int"/>
+          </Option>
+        </Option>
+        <Option name="hmm" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="1000" type="double"/>
+          </Option>
+        </Option>
+        <Option name="inputextentlayer" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="qgis:polygonfromlayerextent_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="inputregionlayer2" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="qgis:refactorfields_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="qgis:polygonfromlayerextent_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="qgis:polygonfromlayerextent" type="QString"/>
+      <Option name="component_description" value="Extract layer extent" type="QString"/>
+      <Option name="component_pos_x" value="406" type="double"/>
+      <Option name="component_pos_y" value="162" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="qgis:polygonfromlayerextent_1" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" value="inputrasterforextent" type="QString"/>
+            <Option name="source" value="0" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="qgis:refactorfields_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="qgis:refactorfields" type="QString"/>
+      <Option name="component_description" value="Rename field" type="QString"/>
+      <Option name="component_pos_x" value="407.99999999999989" type="double"/>
+      <Option name="component_pos_y" value="77.999999999999943" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="qgis:refactorfields_1" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="FIELDS_MAPPING" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="List">
+              <Option type="Map">
+                <Option name="expression" value="&quot;VALUE&quot;" type="QString"/>
+                <Option name="length" value="20" type="int"/>
+                <Option name="name" value="VALUE" type="QString"/>
+                <Option name="precision" value="8" type="int"/>
+                <Option name="type" value="6" type="int"/>
+              </Option>
+              <Option type="Map">
+                <Option name="expression" value="&quot;bc_sqkm_sum&quot;" type="QString"/>
+                <Option name="length" value="20" type="int"/>
+                <Option name="name" value="bc_sqkm" type="QString"/>
+                <Option name="precision" value="6" type="int"/>
+                <Option name="type" value="6" type="int"/>
+              </Option>
+            </Option>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" value="inputlayerwithfield" type="QString"/>
+            <Option name="source" value="0" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="help"/>
+  <Option name="model_group" value="" type="QString"/>
+  <Option name="model_name" value="Rasterize Field using Raster Extent (uint32)" type="QString"/>
+  <Option name="parameterDefinitions" type="Map">
+    <Option name="inputfieldtoraster" type="Map">
+      <Option name="allow_multiple" value="false" type="bool"/>
+      <Option name="data_type" value="0" type="int"/>
+      <Option name="default" value="bc_sqkm" type="QString"/>
+      <Option name="description" value="Input Field to Raster" type="QString"/>
+      <Option name="flags" value="0" type="int"/>
+      <Option name="metadata"/>
+      <Option name="name" value="inputfieldtoraster" type="QString"/>
+      <Option name="parameter_type" value="field" type="QString"/>
+      <Option name="parent_layer" value="inputlayerwithfield" type="QString"/>
+    </Option>
+    <Option name="inputlayerwithfield" type="Map">
+      <Option name="data_types" type="List">
+        <Option value="2" type="int"/>
+      </Option>
+      <Option name="default" type="invalid"/>
+      <Option name="description" value="Input Layer with Field" type="QString"/>
+      <Option name="flags" value="0" type="int"/>
+      <Option name="metadata"/>
+      <Option name="name" value="inputlayerwithfield" type="QString"/>
+      <Option name="parameter_type" value="vector" type="QString"/>
+    </Option>
+    <Option name="inputrasterforextent" type="Map">
+      <Option name="default" type="invalid"/>
+      <Option name="description" value="Input Raster for Extent" type="QString"/>
+      <Option name="flags" value="0" type="int"/>
+      <Option name="metadata"/>
+      <Option name="name" value="inputrasterforextent" type="QString"/>
+      <Option name="parameter_type" value="raster" type="QString"/>
+    </Option>
+    <Option name="model:Rasterize Field (uint32)_1:Output Raster" type="Map">
+      <Option name="create_by_default" value="true" type="bool"/>
+      <Option name="default" type="invalid"/>
+      <Option name="description" value="Output Raster" type="QString"/>
+      <Option name="flags" value="0" type="int"/>
+      <Option name="metadata"/>
+      <Option name="name" value="model:Rasterize Field (uint32)_1:Output Raster" type="QString"/>
+      <Option name="parameter_type" value="rasterDestination" type="QString"/>
+      <Option name="supports_non_file_outputs" value="true" type="bool"/>
+    </Option>
+  </Option>
+  <Option name="parameters" type="Map">
+    <Option name="inputfieldtoraster" type="Map">
+      <Option name="component_description" value="inputfieldtoraster" type="QString"/>
+      <Option name="component_pos_x" value="120.66666666666663" type="double"/>
+      <Option name="component_pos_y" value="191.33333333333331" type="double"/>
+      <Option name="name" value="inputfieldtoraster" type="QString"/>
+    </Option>
+    <Option name="inputlayerwithfield" type="Map">
+      <Option name="component_description" value="inputlayerwithfield" type="QString"/>
+      <Option name="component_pos_x" value="120" type="double"/>
+      <Option name="component_pos_y" value="60" type="double"/>
+      <Option name="name" value="inputlayerwithfield" type="QString"/>
+    </Option>
+    <Option name="inputrasterforextent" type="Map">
+      <Option name="component_description" value="inputrasterforextent" type="QString"/>
+      <Option name="component_pos_x" value="120.66666666666663" type="double"/>
+      <Option name="component_pos_y" value="120" type="double"/>
+      <Option name="name" value="inputrasterforextent" type="QString"/>
+    </Option>
+  </Option>
+</Option>

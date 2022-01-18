@@ -1,0 +1,286 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option type="Map" name="children">
+    <Option type="Map" name="model:Count points in polygons_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="model:Count points in polygons" type="QString" name="alg_id"/>
+      <Option value="Count points in polygons" type="QString" name="component_description"/>
+      <Option value="432.00000000000011" type="double" name="component_pos_x"/>
+      <Option value="565.54768907563027" type="double" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option value="model:Count points in polygons_1" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="pointlayer">
+          <Option type="Map">
+            <Option value="qgis:createspatialindex_1" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="polygonlayer">
+          <Option type="Map">
+            <Option value="qgis:createspatialindex_2" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="model:Create Grid of Region Layer (-at -i)_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="model:Create Grid of Region Layer (-at -i)" type="QString" name="alg_id"/>
+      <Option value="Create Grid of Region Layer (-at -i)" type="QString" name="component_description"/>
+      <Option value="431.5476890756305" type="double" name="component_pos_x"/>
+      <Option value="378.25434173669476" type="double" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option value="model:Create Grid of Region Layer (-at -i)_1" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="hmm">
+          <Option type="Map">
+            <Option value="gridcellsize" type="QString" name="parameter_name"/>
+            <Option value="0" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="inputregionlayer2">
+          <Option type="Map">
+            <Option value="regionlayer" type="QString" name="parameter_name"/>
+            <Option value="0" type="int" name="source"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="model:Create point layer from csv file_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="model:Create point layer from csv file" type="QString" name="alg_id"/>
+      <Option value="Create point layer from csv file" type="QString" name="component_description"/>
+      <Option value="427.33333333333331" type="double" name="component_pos_x"/>
+      <Option value="107.33333333333336" type="double" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option value="model:Create point layer from csv file_1" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="csvfile">
+          <Option type="Map">
+            <Option value="csvfile" type="QString" name="parameter_name"/>
+            <Option value="0" type="int" name="source"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="model:Rasterize Field (uint32)_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="model:Rasterize Field (uint32)" type="QString" name="alg_id"/>
+      <Option value="Rasterize Field (uint32)" type="QString" name="component_description"/>
+      <Option value="432.46603015585606" type="double" name="component_pos_x"/>
+      <Option value="660.85742296918806" type="double" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option value="model:Rasterize Field (uint32)_1" type="QString" name="id"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="Output Point Count Raster">
+          <Option value="model:Rasterize Field (uint32)_1" type="QString" name="child_id"/>
+          <Option value="Output Point Count Raster" type="QString" name="component_description"/>
+          <Option value="632.46603015585606" type="double" name="component_pos_x"/>
+          <Option value="705.85742296918806" type="double" name="component_pos_y"/>
+          <Option type="invalid" name="default_value"/>
+          <Option value="false" type="bool" name="mandatory"/>
+          <Option value="Output Point Count Raster" type="QString" name="name"/>
+          <Option value="gdal:rasterize_1:Output Raster" type="QString" name="output_name"/>
+        </Option>
+      </Option>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="fieldtoraster">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="NUMPOINTS" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="hmm">
+          <Option type="Map">
+            <Option value="gridcellsize" type="QString" name="parameter_name"/>
+            <Option value="0" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="inputextentlayer">
+          <Option type="Map">
+            <Option value="regionlayer" type="QString" name="parameter_name"/>
+            <Option value="0" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="inputregionlayer2">
+          <Option type="Map">
+            <Option value="model:Count points in polygons_1" type="QString" name="child_id"/>
+            <Option value="qgis:countpointsinpolygon_1:Count" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="native:reprojectlayer_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="native:reprojectlayer" type="QString" name="alg_id"/>
+      <Option value="Reproject to 3035" type="QString" name="component_description"/>
+      <Option value="428.06358543417366" type="double" name="component_pos_x"/>
+      <Option value="197.24614845938379" type="double" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option value="native:reprojectlayer_1" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="model:Create point layer from csv file_1" type="QString" name="child_id"/>
+            <Option value="qgis:createpointslayerfromtable_1:Points" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="TARGET_CRS">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option type="QgsCoordinateReferenceSystem" name="static_value">
+              <spatialrefsys>
+                <proj4>+proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+                <srsid>1000</srsid>
+                <srid>3035</srid>
+                <authid>EPSG:3035</authid>
+                <description>ETRS89 / LAEA Europe</description>
+                <projectionacronym>laea</projectionacronym>
+                <ellipsoidacronym>GRS80</ellipsoidacronym>
+                <geographicflag>false</geographicflag>
+              </spatialrefsys>
+            </Option>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="qgis:createspatialindex_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="qgis:createspatialindex" type="QString" name="alg_id"/>
+      <Option value="Index Points" type="QString" name="component_description"/>
+      <Option value="430.21435574229702" type="double" name="component_pos_x"/>
+      <Option value="291.00819327731085" type="double" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option value="qgis:createspatialindex_1" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="native:reprojectlayer_1" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="qgis:createspatialindex_2">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="qgis:createspatialindex" type="QString" name="alg_id"/>
+      <Option value="Index Polygons" type="QString" name="component_description"/>
+      <Option value="433.33333333333348" type="double" name="component_pos_x"/>
+      <Option value="473.97640056022402" type="double" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option value="qgis:createspatialindex_2" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="model:Create Grid of Region Layer (-at -i)_1" type="QString" name="child_id"/>
+            <Option value="native:pixelstopolygons_1:Output Vector Grid" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="help"/>
+  <Option value="" type="QString" name="model_group"/>
+  <Option value="Create point count raster from csv file" type="QString" name="model_name"/>
+  <Option type="Map" name="parameterDefinitions">
+    <Option type="Map" name="csvfile">
+      <Option type="List" name="data_types">
+        <Option value="5" type="int"/>
+      </Option>
+      <Option type="invalid" name="default"/>
+      <Option value="CSV File" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option name="metadata"/>
+      <Option value="csvfile" type="QString" name="name"/>
+      <Option value="vector" type="QString" name="parameter_type"/>
+    </Option>
+    <Option type="Map" name="gridcellsize">
+      <Option value="1" type="int" name="data_type"/>
+      <Option value="100" type="QString" name="default"/>
+      <Option value="9" type="int" name="default_unit"/>
+      <Option value="Output Grid Cell Size" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option value="100000" type="double" name="max"/>
+      <Option name="metadata"/>
+      <Option value="1" type="double" name="min"/>
+      <Option value="gridcellsize" type="QString" name="name"/>
+      <Option value="distance" type="QString" name="parameter_type"/>
+      <Option value="regionlayer" type="QString" name="parent"/>
+    </Option>
+    <Option type="Map" name="model:Rasterize Field (uint32)_1:Output Point Count Raster">
+      <Option value="true" type="bool" name="create_by_default"/>
+      <Option type="invalid" name="default"/>
+      <Option value="Output Point Count Raster" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option name="metadata"/>
+      <Option value="model:Rasterize Field (uint32)_1:Output Point Count Raster" type="QString" name="name"/>
+      <Option value="rasterDestination" type="QString" name="parameter_type"/>
+      <Option value="true" type="bool" name="supports_non_file_outputs"/>
+    </Option>
+    <Option type="Map" name="regionlayer">
+      <Option type="List" name="data_types">
+        <Option value="2" type="int"/>
+      </Option>
+      <Option type="invalid" name="default"/>
+      <Option value="Region Layer" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option name="metadata"/>
+      <Option value="regionlayer" type="QString" name="name"/>
+      <Option value="vector" type="QString" name="parameter_type"/>
+    </Option>
+  </Option>
+  <Option type="Map" name="parameters">
+    <Option type="Map" name="csvfile">
+      <Option value="csvfile" type="QString" name="component_description"/>
+      <Option value="148.66666666666666" type="double" name="component_pos_x"/>
+      <Option value="52" type="double" name="component_pos_y"/>
+      <Option value="csvfile" type="QString" name="name"/>
+    </Option>
+    <Option type="Map" name="gridcellsize">
+      <Option value="gridcellsize" type="QString" name="component_description"/>
+      <Option value="148.66666666666663" type="double" name="component_pos_x"/>
+      <Option value="192.66666666666666" type="double" name="component_pos_y"/>
+      <Option value="gridcellsize" type="QString" name="name"/>
+    </Option>
+    <Option type="Map" name="regionlayer">
+      <Option value="regionlayer" type="QString" name="component_description"/>
+      <Option value="148.66666666666663" type="double" name="component_pos_x"/>
+      <Option value="118.66666666666666" type="double" name="component_pos_y"/>
+      <Option value="regionlayer" type="QString" name="name"/>
+    </Option>
+  </Option>
+</Option>

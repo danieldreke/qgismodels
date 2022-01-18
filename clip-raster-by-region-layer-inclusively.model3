@@ -1,0 +1,214 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option name="children" type="Map">
+    <Option name="gdal:cliprasterbymasklayer_1" type="Map">
+      <Option value="true" name="active" type="bool"/>
+      <Option name="alg_config"/>
+      <Option value="gdal:cliprasterbymasklayer" name="alg_id" type="QString"/>
+      <Option value="Clip raster by mask layer" name="component_description" type="QString"/>
+      <Option value="420.66666666666674" name="component_pos_x" type="double"/>
+      <Option value="369.99999999999994" name="component_pos_y" type="double"/>
+      <Option name="dependencies"/>
+      <Option value="gdal:cliprasterbymasklayer_1" name="id" type="QString"/>
+      <Option name="outputs" type="Map">
+        <Option name="Clipped Raster" type="Map">
+          <Option value="gdal:cliprasterbymasklayer_1" name="child_id" type="QString"/>
+          <Option value="Clipped Raster" name="component_description" type="QString"/>
+          <Option value="620.66666666666674" name="component_pos_x" type="double"/>
+          <Option value="414.99999999999994" name="component_pos_y" type="double"/>
+          <Option name="default_value" type="invalid"/>
+          <Option value="false" name="mandatory" type="bool"/>
+          <Option value="Clipped Raster" name="name" type="QString"/>
+          <Option value="OUTPUT" name="output_name" type="QString"/>
+        </Option>
+      </Option>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="ALPHA_BAND" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="false" name="static_value" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="CROP_TO_CUTLINE" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="false" name="static_value" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="DATA_TYPE" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="0" name="static_value" type="int"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option value="inputraster" name="parameter_name" type="QString"/>
+            <Option value="0" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="KEEP_RESOLUTION" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="false" name="static_value" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="MASK" type="List">
+          <Option type="Map">
+            <Option value="gdal:polygonize_1" name="child_id" type="QString"/>
+            <Option value="OUTPUT" name="output_name" type="QString"/>
+            <Option value="1" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="NODATA" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="OPTIONS" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="" name="static_value" type="QString"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="gdal:polygonize_1" type="Map">
+      <Option value="true" name="active" type="bool"/>
+      <Option name="alg_config"/>
+      <Option value="gdal:polygonize" name="alg_id" type="QString"/>
+      <Option value="Polygonize (raster to vector)" name="component_description" type="QString"/>
+      <Option value="420.66666666666674" name="component_pos_x" type="double"/>
+      <Option value="273.99999999999994" name="component_pos_y" type="double"/>
+      <Option name="dependencies"/>
+      <Option value="gdal:polygonize_1" name="id" type="QString"/>
+      <Option name="outputs"/>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="BAND" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="1" name="static_value" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="EIGHT_CONNECTEDNESS" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="false" name="static_value" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="FIELD" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="DN" name="static_value" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option value="model:Rasterize Region Layer (-at -i)_1" name="child_id" type="QString"/>
+            <Option value="gdal:rasterize_1:Output Raster Grid" name="output_name" type="QString"/>
+            <Option value="1" name="source" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="model:Rasterize Region Layer (-at -i)_1" type="Map">
+      <Option value="true" name="active" type="bool"/>
+      <Option name="alg_config"/>
+      <Option value="model:Rasterize Region Layer (-at -i)" name="alg_id" type="QString"/>
+      <Option value="Rasterize Region Layer (-at -i)" name="component_description" type="QString"/>
+      <Option value="419.99999999999994" name="component_pos_x" type="double"/>
+      <Option value="178" name="component_pos_y" type="double"/>
+      <Option name="dependencies"/>
+      <Option value="model:Rasterize Region Layer (-at -i)_1" name="id" type="QString"/>
+      <Option name="outputs"/>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="hmm" type="List">
+          <Option type="Map">
+            <Option value="outputrastercellsizem" name="parameter_name" type="QString"/>
+            <Option value="0" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="inputregionlayer2" type="List">
+          <Option type="Map">
+            <Option value="inputregionlayer" name="parameter_name" type="QString"/>
+            <Option value="0" name="source" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="help"/>
+  <Option value="" name="model_group" type="QString"/>
+  <Option value="Clip Raster by Region Layer inclusively" name="model_name" type="QString"/>
+  <Option name="parameterDefinitions" type="Map">
+    <Option name="gdal:cliprasterbymasklayer_1:Clipped Raster" type="Map">
+      <Option value="true" name="create_by_default" type="bool"/>
+      <Option name="default" type="invalid"/>
+      <Option value="Clipped Raster" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option name="metadata"/>
+      <Option value="gdal:cliprasterbymasklayer_1:Clipped Raster" name="name" type="QString"/>
+      <Option value="rasterDestination" name="parameter_type" type="QString"/>
+      <Option value="false" name="supports_non_file_outputs" type="bool"/>
+    </Option>
+    <Option name="inputraster" type="Map">
+      <Option name="default" type="invalid"/>
+      <Option value="Input Raster" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option name="metadata"/>
+      <Option value="inputraster" name="name" type="QString"/>
+      <Option value="raster" name="parameter_type" type="QString"/>
+    </Option>
+    <Option name="inputregionlayer" type="Map">
+      <Option name="data_types" type="List">
+        <Option value="2" type="int"/>
+      </Option>
+      <Option name="default" type="invalid"/>
+      <Option value="Input Region Layer" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option name="metadata"/>
+      <Option value="inputregionlayer" name="name" type="QString"/>
+      <Option value="vector" name="parameter_type" type="QString"/>
+    </Option>
+    <Option name="outputrastercellsizem" type="Map">
+      <Option value="1" name="data_type" type="int"/>
+      <Option value="0" name="default" type="QString"/>
+      <Option value="9" name="default_unit" type="int"/>
+      <Option value="Output Raster Cell Size [m]" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option value="1000" name="max" type="double"/>
+      <Option name="metadata"/>
+      <Option value="100" name="min" type="double"/>
+      <Option value="outputrastercellsizem" name="name" type="QString"/>
+      <Option value="distance" name="parameter_type" type="QString"/>
+      <Option value="inputregionlayer" name="parent" type="QString"/>
+    </Option>
+  </Option>
+  <Option name="parameters" type="Map">
+    <Option name="inputraster" type="Map">
+      <Option value="inputraster" name="component_description" type="QString"/>
+      <Option value="121.33333333333331" name="component_pos_x" type="double"/>
+      <Option value="203.33333333333329" name="component_pos_y" type="double"/>
+      <Option value="inputraster" name="name" type="QString"/>
+    </Option>
+    <Option name="inputregionlayer" type="Map">
+      <Option value="inputregionlayer" name="component_description" type="QString"/>
+      <Option value="120" name="component_pos_x" type="double"/>
+      <Option value="60" name="component_pos_y" type="double"/>
+      <Option value="inputregionlayer" name="name" type="QString"/>
+    </Option>
+    <Option name="outputrastercellsizem" type="Map">
+      <Option value="outputrastercellsizem" name="component_description" type="QString"/>
+      <Option value="121.33333333333331" name="component_pos_x" type="double"/>
+      <Option value="128.66666666666669" name="component_pos_y" type="double"/>
+      <Option value="outputrastercellsizem" name="name" type="QString"/>
+    </Option>
+  </Option>
+</Option>

@@ -1,0 +1,332 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option name="children" type="Map">
+    <Option name="gdal:rasterize_1" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="gdal:rasterize"/>
+      <Option name="component_description" type="QString" value="Rasterize (vector to raster)"/>
+      <Option name="component_pos_x" type="double" value="421.33333333333309"/>
+      <Option name="component_pos_y" type="double" value="397.3333333333332"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="gdal:rasterize_1"/>
+      <Option name="outputs" type="Map">
+        <Option name="Output" type="Map">
+          <Option name="child_id" type="QString" value="gdal:rasterize_1"/>
+          <Option name="component_description" type="QString" value="Output"/>
+          <Option name="component_pos_x" type="double" value="621.33333333333303"/>
+          <Option name="component_pos_y" type="double" value="442.3333333333332"/>
+          <Option name="default_value" type="invalid"/>
+          <Option name="mandatory" type="bool" value="false"/>
+          <Option name="name" type="QString" value="Output"/>
+          <Option name="output_name" type="QString" value="OUTPUT"/>
+        </Option>
+      </Option>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="BURN" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="double" value="0"/>
+          </Option>
+        </Option>
+        <Option name="DATA_TYPE" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="5"/>
+          </Option>
+        </Option>
+        <Option name="EXTENT" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" type="QString" value="inputregionlayer"/>
+            <Option name="source" type="int" value="0"/>
+          </Option>
+        </Option>
+        <Option name="FIELD" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QString" value="_mean"/>
+          </Option>
+        </Option>
+        <Option name="HEIGHT" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" type="QString" value="outputgridsizem"/>
+            <Option name="source" type="int" value="0"/>
+          </Option>
+        </Option>
+        <Option name="INIT" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="qgis:zonalstatistics_1"/>
+            <Option name="output_name" type="QString" value="INPUT_VECTOR"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+        </Option>
+        <Option name="INVERT" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="bool" value="false"/>
+          </Option>
+        </Option>
+        <Option name="NODATA" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="double" value="0"/>
+          </Option>
+        </Option>
+        <Option name="OPTIONS" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QString" value=""/>
+          </Option>
+        </Option>
+        <Option name="UNITS" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="1"/>
+          </Option>
+        </Option>
+        <Option name="WIDTH" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" type="QString" value="outputgridsizem"/>
+            <Option name="source" type="int" value="0"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="grass7:r.null_1" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="grass7:r.null"/>
+      <Option name="component_description" type="QString" value="r.null"/>
+      <Option name="component_pos_x" type="double" value="420.66666666666663"/>
+      <Option name="component_pos_y" type="double" value="115.99999999999996"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="grass7:r.null_1"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="-c" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="bool" value="false"/>
+          </Option>
+        </Option>
+        <Option name="-f" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="bool" value="false"/>
+          </Option>
+        </Option>
+        <Option name="-i" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="bool" value="false"/>
+          </Option>
+        </Option>
+        <Option name="-n" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="bool" value="false"/>
+          </Option>
+        </Option>
+        <Option name="-r" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="bool" value="false"/>
+          </Option>
+        </Option>
+        <Option name="GRASS_RASTER_FORMAT_META" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QString" value=""/>
+          </Option>
+        </Option>
+        <Option name="GRASS_RASTER_FORMAT_OPT" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QString" value=""/>
+          </Option>
+        </Option>
+        <Option name="GRASS_REGION_CELLSIZE_PARAMETER" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="double" value="0"/>
+          </Option>
+        </Option>
+        <Option name="GRASS_REGION_PARAMETER" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="map" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" type="QString" value="rastertoreraster"/>
+            <Option name="source" type="int" value="0"/>
+          </Option>
+        </Option>
+        <Option name="null" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="setnull" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QString" value=""/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="model:Create Grid of Region Layer (-at -i)_1" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="model:Create Grid of Region Layer (-at -i)"/>
+      <Option name="component_description" type="QString" value="Create Grid of Region Layer (-at -i)"/>
+      <Option name="component_pos_x" type="double" value="421.33333333333337"/>
+      <Option name="component_pos_y" type="double" value="195.33333333333331"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="model:Create Grid of Region Layer (-at -i)_1"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="hmm" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" type="QString" value="outputgridsizem"/>
+            <Option name="source" type="int" value="0"/>
+          </Option>
+        </Option>
+        <Option name="inputregionlayer2" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" type="QString" value="inputregionlayer"/>
+            <Option name="source" type="int" value="0"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="qgis:zonalstatistics_1" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="qgis:zonalstatistics"/>
+      <Option name="component_description" type="QString" value="Zonal statistics"/>
+      <Option name="component_pos_x" type="double" value="420.66666666666652"/>
+      <Option name="component_pos_y" type="double" value="295.99999999999989"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="qgis:zonalstatistics_1"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="COLUMN_PREFIX" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QString" value="_"/>
+          </Option>
+        </Option>
+        <Option name="INPUT_RASTER" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="grass7:r.null_1"/>
+            <Option name="output_name" type="QString" value="output"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+        </Option>
+        <Option name="INPUT_VECTOR" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="model:Create Grid of Region Layer (-at -i)_1"/>
+            <Option name="output_name" type="QString" value="native:pixelstopolygons_1:Output Vector Grid"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+        </Option>
+        <Option name="RASTER_BAND" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QString" value="1"/>
+          </Option>
+        </Option>
+        <Option name="STATS" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="2"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="help"/>
+  <Option name="model_group" type="QString" value=""/>
+  <Option name="model_name" type="QString" value="Rerasterize Raster (mean, keep null)"/>
+  <Option name="parameterDefinitions" type="Map">
+    <Option name="gdal:rasterize_1:Output" type="Map">
+      <Option name="create_by_default" type="bool" value="true"/>
+      <Option name="default" type="invalid"/>
+      <Option name="description" type="QString" value="Output"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="gdal:rasterize_1:Output"/>
+      <Option name="parameter_type" type="QString" value="rasterDestination"/>
+      <Option name="supports_non_file_outputs" type="bool" value="false"/>
+    </Option>
+    <Option name="inputregionlayer" type="Map">
+      <Option name="data_types" type="List">
+        <Option type="int" value="2"/>
+      </Option>
+      <Option name="default" type="invalid"/>
+      <Option name="description" type="QString" value="Input Region Layer"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="inputregionlayer"/>
+      <Option name="parameter_type" type="QString" value="vector"/>
+    </Option>
+    <Option name="outputgridsizem" type="Map">
+      <Option name="data_type" type="int" value="1"/>
+      <Option name="default" type="QString" value="1000"/>
+      <Option name="default_unit" type="int" value="9"/>
+      <Option name="description" type="QString" value="Output Grid Size [m]"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="max" type="double" value="10000"/>
+      <Option name="metadata"/>
+      <Option name="min" type="double" value="100"/>
+      <Option name="name" type="QString" value="outputgridsizem"/>
+      <Option name="parameter_type" type="QString" value="distance"/>
+      <Option name="parent" type="QString" value="inputregionlayer"/>
+    </Option>
+    <Option name="rastertoreraster" type="Map">
+      <Option name="default" type="invalid"/>
+      <Option name="description" type="QString" value="Raster to Rerasterize"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="rastertoreraster"/>
+      <Option name="parameter_type" type="QString" value="raster"/>
+    </Option>
+  </Option>
+  <Option name="parameters" type="Map">
+    <Option name="inputregionlayer" type="Map">
+      <Option name="component_description" type="QString" value="inputregionlayer"/>
+      <Option name="component_pos_x" type="double" value="141.33333333333326"/>
+      <Option name="component_pos_y" type="double" value="44"/>
+      <Option name="name" type="QString" value="inputregionlayer"/>
+    </Option>
+    <Option name="outputgridsizem" type="Map">
+      <Option name="component_description" type="QString" value="outputgridsizem"/>
+      <Option name="component_pos_x" type="double" value="140"/>
+      <Option name="component_pos_y" type="double" value="185.33333333333334"/>
+      <Option name="name" type="QString" value="outputgridsizem"/>
+    </Option>
+    <Option name="rastertoreraster" type="Map">
+      <Option name="component_description" type="QString" value="rastertoreraster"/>
+      <Option name="component_pos_x" type="double" value="141.33333333333331"/>
+      <Option name="component_pos_y" type="double" value="112"/>
+      <Option name="name" type="QString" value="rastertoreraster"/>
+    </Option>
+  </Option>
+</Option>

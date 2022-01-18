@@ -1,0 +1,133 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option name="children" type="Map">
+    <Option name="native:pixelstopolygons_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="native:pixelstopolygons" type="QString"/>
+      <Option name="component_description" value="Raster pixels to polygons" type="QString"/>
+      <Option name="component_pos_x" value="427.99999999999994" type="double"/>
+      <Option name="component_pos_y" value="110.66666666666669" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="native:pixelstopolygons_1" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="FIELD_NAME" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="cellid" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="INPUT_RASTER" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" value="cellidsraster" type="QString"/>
+            <Option name="source" value="0" type="int"/>
+          </Option>
+        </Option>
+        <Option name="RASTER_BAND" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="1" type="QString"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="qgis:executesql_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="qgis:executesql" type="QString"/>
+      <Option name="component_description" value="Execute SQL" type="QString"/>
+      <Option name="component_pos_x" value="427.99999999999994" type="double"/>
+      <Option name="component_pos_y" value="226.66666666666669" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="qgis:executesql_1" type="QString"/>
+      <Option name="outputs" type="Map">
+        <Option name="OUTPUT SQL" type="Map">
+          <Option name="child_id" value="qgis:executesql_1" type="QString"/>
+          <Option name="component_description" value="OUTPUT SQL" type="QString"/>
+          <Option name="component_pos_x" value="628" type="double"/>
+          <Option name="component_pos_y" value="271.66666666666669" type="double"/>
+          <Option name="default_value" type="invalid"/>
+          <Option name="mandatory" value="false" type="bool"/>
+          <Option name="name" value="OUTPUT SQL" type="QString"/>
+          <Option name="output_name" value="OUTPUT" type="QString"/>
+        </Option>
+      </Option>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT_DATASOURCES" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="native:pixelstopolygons_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="INPUT_GEOMETRY_CRS" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="INPUT_GEOMETRY_FIELD" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="INPUT_GEOMETRY_TYPE" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="INPUT_QUERY" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="SELECT geometry, cellid FROM input1" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="INPUT_UID_FIELD" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="" type="QString"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="help"/>
+  <Option name="model_group" value="" type="QString"/>
+  <Option name="model_name" value="Vectorize Raster (WIP)" type="QString"/>
+  <Option name="parameterDefinitions" type="Map">
+    <Option name="cellidsraster" type="Map">
+      <Option name="default" type="invalid"/>
+      <Option name="description" value="CellIds Raster" type="QString"/>
+      <Option name="flags" value="0" type="int"/>
+      <Option name="metadata"/>
+      <Option name="name" value="cellidsraster" type="QString"/>
+      <Option name="parameter_type" value="raster" type="QString"/>
+    </Option>
+    <Option name="qgis:executesql_1:OUTPUT SQL" type="Map">
+      <Option name="create_by_default" value="true" type="bool"/>
+      <Option name="data_type" value="-1" type="int"/>
+      <Option name="default" type="invalid"/>
+      <Option name="description" value="OUTPUT SQL" type="QString"/>
+      <Option name="flags" value="0" type="int"/>
+      <Option name="metadata"/>
+      <Option name="name" value="qgis:executesql_1:OUTPUT SQL" type="QString"/>
+      <Option name="parameter_type" value="sink" type="QString"/>
+      <Option name="supports_non_file_outputs" value="true" type="bool"/>
+    </Option>
+  </Option>
+  <Option name="parameters" type="Map">
+    <Option name="cellidsraster" type="Map">
+      <Option name="component_description" value="cellidsraster" type="QString"/>
+      <Option name="component_pos_x" value="147.33333333333334" type="double"/>
+      <Option name="component_pos_y" value="65.333333333333343" type="double"/>
+      <Option name="name" value="cellidsraster" type="QString"/>
+    </Option>
+  </Option>
+</Option>

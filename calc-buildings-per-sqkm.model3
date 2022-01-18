@@ -1,0 +1,193 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option name="children" type="Map">
+    <Option name="native:pixelstopolygons_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="native:pixelstopolygons" type="QString"/>
+      <Option name="component_description" value="Raster pixels to polygons" type="QString"/>
+      <Option name="component_pos_x" value="411.99999999999994" type="double"/>
+      <Option name="component_pos_y" value="141.99999999999997" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="native:pixelstopolygons_1" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="FIELD_NAME" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="VALUE" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="INPUT_RASTER" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" value="inputrasterinhabitantspersqkm" type="QString"/>
+            <Option name="source" value="0" type="int"/>
+          </Option>
+        </Option>
+        <Option name="RASTER_BAND" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="1" type="QString"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="qgis:createspatialindex_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="qgis:createspatialindex" type="QString"/>
+      <Option name="component_description" value="Indexed Grid" type="QString"/>
+      <Option name="component_pos_x" value="411.99999999999989" type="double"/>
+      <Option name="component_pos_y" value="234.00000000000003" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="qgis:createspatialindex_1" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="native:pixelstopolygons_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="qgis:createspatialindex_2" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="qgis:createspatialindex" type="QString"/>
+      <Option name="component_description" value="Indexed Subregions" type="QString"/>
+      <Option name="component_pos_x" value="412" type="double"/>
+      <Option name="component_pos_y" value="323.99999999999994" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="qgis:createspatialindex_2" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" value="inputlayerbuildingspersubregion" type="QString"/>
+            <Option name="source" value="0" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="qgis:joinbylocationsummary_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="qgis:joinbylocationsummary" type="QString"/>
+      <Option name="component_description" value="Join attributes by location (summary)" type="QString"/>
+      <Option name="component_pos_x" value="413.99999999999989" type="double"/>
+      <Option name="component_pos_y" value="413.99999999999989" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="qgis:joinbylocationsummary_1" type="QString"/>
+      <Option name="outputs" type="Map">
+        <Option name="Output Buildings per sqkm" type="Map">
+          <Option name="child_id" value="qgis:joinbylocationsummary_1" type="QString"/>
+          <Option name="component_description" value="Output Buildings per sqkm" type="QString"/>
+          <Option name="component_pos_x" value="613.99999999999989" type="double"/>
+          <Option name="component_pos_y" value="458.99999999999989" type="double"/>
+          <Option name="default_value" type="invalid"/>
+          <Option name="mandatory" value="false" type="bool"/>
+          <Option name="name" value="Output Buildings per sqkm" type="QString"/>
+          <Option name="output_name" value="OUTPUT" type="QString"/>
+        </Option>
+      </Option>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="DISCARD_NONMATCHING" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="false" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="qgis:createspatialindex_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="JOIN" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" value="inputlayerbuildingspersubregion" type="QString"/>
+            <Option name="source" value="0" type="int"/>
+          </Option>
+        </Option>
+        <Option name="JOIN_FIELDS" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="bcount" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="PREDICATE" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="SUMMARIES" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="5" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="help"/>
+  <Option name="model_group" value="" type="QString"/>
+  <Option name="model_name" value="Calc Buildings per sqkm" type="QString"/>
+  <Option name="parameterDefinitions" type="Map">
+    <Option name="inputlayerbuildingspersubregion" type="Map">
+      <Option name="data_types" type="List">
+        <Option value="2" type="int"/>
+      </Option>
+      <Option name="default" type="invalid"/>
+      <Option name="description" value="Input Layer Buildings per Subregion" type="QString"/>
+      <Option name="flags" value="0" type="int"/>
+      <Option name="metadata"/>
+      <Option name="name" value="inputlayerbuildingspersubregion" type="QString"/>
+      <Option name="parameter_type" value="vector" type="QString"/>
+    </Option>
+    <Option name="inputrasterinhabitantspersqkm" type="Map">
+      <Option name="default" type="invalid"/>
+      <Option name="description" value="Input Raster Inhabitants per sqkm" type="QString"/>
+      <Option name="flags" value="0" type="int"/>
+      <Option name="metadata"/>
+      <Option name="name" value="inputrasterinhabitantspersqkm" type="QString"/>
+      <Option name="parameter_type" value="raster" type="QString"/>
+    </Option>
+    <Option name="qgis:joinbylocationsummary_1:Output Buildings per sqkm" type="Map">
+      <Option name="create_by_default" value="true" type="bool"/>
+      <Option name="data_type" value="-1" type="int"/>
+      <Option name="default" type="invalid"/>
+      <Option name="description" value="Output Buildings per sqkm" type="QString"/>
+      <Option name="flags" value="0" type="int"/>
+      <Option name="metadata"/>
+      <Option name="name" value="qgis:joinbylocationsummary_1:Output Buildings per sqkm" type="QString"/>
+      <Option name="parameter_type" value="sink" type="QString"/>
+      <Option name="supports_non_file_outputs" value="true" type="bool"/>
+    </Option>
+  </Option>
+  <Option name="parameters" type="Map">
+    <Option name="inputlayerbuildingspersubregion" type="Map">
+      <Option name="component_description" value="inputlayerbuildingspersubregion" type="QString"/>
+      <Option name="component_pos_x" value="120.66666666666669" type="double"/>
+      <Option name="component_pos_y" value="117.33333333333333" type="double"/>
+      <Option name="name" value="inputlayerbuildingspersubregion" type="QString"/>
+    </Option>
+    <Option name="inputrasterinhabitantspersqkm" type="Map">
+      <Option name="component_description" value="inputrasterinhabitantspersqkm" type="QString"/>
+      <Option name="component_pos_x" value="120" type="double"/>
+      <Option name="component_pos_y" value="60" type="double"/>
+      <Option name="name" value="inputrasterinhabitantspersqkm" type="QString"/>
+    </Option>
+  </Option>
+</Option>

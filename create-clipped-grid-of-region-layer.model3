@@ -1,0 +1,181 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option name="children" type="Map">
+    <Option name="model:Rasterize Region Layer (-at -i)_1" type="Map">
+      <Option value="true" name="active" type="bool"/>
+      <Option name="alg_config"/>
+      <Option value="model:Rasterize Region Layer (-at -i)" name="alg_id" type="QString"/>
+      <Option value="Rasterize Region Layer (-at -i)" name="component_description" type="QString"/>
+      <Option value="404.66666666666663" name="component_pos_x" type="double"/>
+      <Option value="104.66666666666674" name="component_pos_y" type="double"/>
+      <Option name="dependencies"/>
+      <Option value="model:Rasterize Region Layer (-at -i)_1" name="id" type="QString"/>
+      <Option name="outputs"/>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="hmm" type="List">
+          <Option type="Map">
+            <Option value="hmm" name="parameter_name" type="QString"/>
+            <Option value="0" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="inputregionlayer2" type="List">
+          <Option type="Map">
+            <Option value="inputregionlayer2" name="parameter_name" type="QString"/>
+            <Option value="0" name="source" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:clip_1" type="Map">
+      <Option value="true" name="active" type="bool"/>
+      <Option name="alg_config"/>
+      <Option value="native:clip" name="alg_id" type="QString"/>
+      <Option value="Clip" name="component_description" type="QString"/>
+      <Option value="624.66666666666663" name="component_pos_x" type="double"/>
+      <Option value="378.66666666666669" name="component_pos_y" type="double"/>
+      <Option name="dependencies"/>
+      <Option value="native:clip_1" name="id" type="QString"/>
+      <Option name="outputs" type="Map">
+        <Option name="Output Vector Grid Clipped" type="Map">
+          <Option value="native:clip_1" name="child_id" type="QString"/>
+          <Option value="Output Vector Grid Clipped" name="component_description" type="QString"/>
+          <Option value="829.33333333333326" name="component_pos_x" type="double"/>
+          <Option value="455.66666666666663" name="component_pos_y" type="double"/>
+          <Option name="default_value" type="invalid"/>
+          <Option value="false" name="mandatory" type="bool"/>
+          <Option value="Output Vector Grid Clipped" name="name" type="QString"/>
+          <Option value="OUTPUT" name="output_name" type="QString"/>
+        </Option>
+      </Option>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option value="native:pixelstopolygons_1" name="child_id" type="QString"/>
+            <Option value="OUTPUT" name="output_name" type="QString"/>
+            <Option value="1" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="OVERLAY" type="List">
+          <Option type="Map">
+            <Option value="inputregionlayer2" name="parameter_name" type="QString"/>
+            <Option value="0" name="source" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:pixelstopolygons_1" type="Map">
+      <Option value="true" name="active" type="bool"/>
+      <Option name="alg_config"/>
+      <Option value="native:pixelstopolygons" name="alg_id" type="QString"/>
+      <Option value="Raster pixels to polygons" name="component_description" type="QString"/>
+      <Option value="404.66666666666663" name="component_pos_x" type="double"/>
+      <Option value="211.99999999999997" name="component_pos_y" type="double"/>
+      <Option name="dependencies"/>
+      <Option value="native:pixelstopolygons_1" name="id" type="QString"/>
+      <Option name="outputs" type="Map">
+        <Option name="Output Vector Grid" type="Map">
+          <Option value="native:pixelstopolygons_1" name="child_id" type="QString"/>
+          <Option value="Output Vector Grid" name="component_description" type="QString"/>
+          <Option value="612.66666666666674" name="component_pos_x" type="double"/>
+          <Option value="283" name="component_pos_y" type="double"/>
+          <Option name="default_value" type="invalid"/>
+          <Option value="false" name="mandatory" type="bool"/>
+          <Option value="Output Vector Grid" name="name" type="QString"/>
+          <Option value="OUTPUT" name="output_name" type="QString"/>
+        </Option>
+      </Option>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="FIELD_NAME" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="VALUE" name="static_value" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="INPUT_RASTER" type="List">
+          <Option type="Map">
+            <Option value="model:Rasterize Region Layer (-at -i)_1" name="child_id" type="QString"/>
+            <Option value="gdal:rasterize_1:Output Raster Grid" name="output_name" type="QString"/>
+            <Option value="1" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="RASTER_BAND" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="1" name="static_value" type="QString"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="help"/>
+  <Option value="" name="model_group" type="QString"/>
+  <Option value="Create Clipped Grid of Region Layer (-at -i)" name="model_name" type="QString"/>
+  <Option name="parameterDefinitions" type="Map">
+    <Option name="hmm" type="Map">
+      <Option value="1" name="data_type" type="int"/>
+      <Option value="100" name="default" type="QString"/>
+      <Option value="9" name="default_unit" type="int"/>
+      <Option value="Output Grid Size" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option value="100000" name="max" type="double"/>
+      <Option name="metadata"/>
+      <Option value="0" name="min" type="double"/>
+      <Option value="hmm" name="name" type="QString"/>
+      <Option value="distance" name="parameter_type" type="QString"/>
+      <Option value="inputregionlayer2" name="parent" type="QString"/>
+    </Option>
+    <Option name="inputregionlayer2" type="Map">
+      <Option name="data_types" type="List">
+        <Option value="2" type="int"/>
+      </Option>
+      <Option name="default" type="invalid"/>
+      <Option value="Input Region Layer" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option name="metadata"/>
+      <Option value="inputregionlayer2" name="name" type="QString"/>
+      <Option value="vector" name="parameter_type" type="QString"/>
+    </Option>
+    <Option name="native:clip_1:Output Vector Grid Clipped" type="Map">
+      <Option value="true" name="create_by_default" type="bool"/>
+      <Option value="-1" name="data_type" type="int"/>
+      <Option name="default" type="invalid"/>
+      <Option value="Output Vector Grid Clipped" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option name="metadata"/>
+      <Option value="native:clip_1:Output Vector Grid Clipped" name="name" type="QString"/>
+      <Option value="sink" name="parameter_type" type="QString"/>
+      <Option value="true" name="supports_non_file_outputs" type="bool"/>
+    </Option>
+    <Option name="native:pixelstopolygons_1:Output Vector Grid" type="Map">
+      <Option value="true" name="create_by_default" type="bool"/>
+      <Option value="2" name="data_type" type="int"/>
+      <Option name="default" type="invalid"/>
+      <Option value="Output Vector Grid" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option name="metadata"/>
+      <Option value="native:pixelstopolygons_1:Output Vector Grid" name="name" type="QString"/>
+      <Option value="sink" name="parameter_type" type="QString"/>
+      <Option value="true" name="supports_non_file_outputs" type="bool"/>
+    </Option>
+  </Option>
+  <Option name="parameters" type="Map">
+    <Option name="hmm" type="Map">
+      <Option value="hmm" name="component_description" type="QString"/>
+      <Option value="135.99999999999997" name="component_pos_x" type="double"/>
+      <Option value="124.66666666666663" name="component_pos_y" type="double"/>
+      <Option value="hmm" name="name" type="QString"/>
+    </Option>
+    <Option name="inputregionlayer2" type="Map">
+      <Option value="inputregionlayer2" name="component_description" type="QString"/>
+      <Option value="134" name="component_pos_x" type="double"/>
+      <Option value="46" name="component_pos_y" type="double"/>
+      <Option value="inputregionlayer2" name="name" type="QString"/>
+    </Option>
+  </Option>
+</Option>

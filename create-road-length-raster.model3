@@ -1,0 +1,317 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option name="children" type="Map">
+    <Option name="gdal:translate_1" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="gdal:translate"/>
+      <Option name="component_description" type="QString" value="Translate (convert format)"/>
+      <Option name="component_pos_x" type="double" value="407.95431991355161"/>
+      <Option name="component_pos_y" type="double" value="677.06382053470952"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="gdal:translate_1"/>
+      <Option name="outputs" type="Map">
+        <Option name="Output Road Length Raster" type="Map">
+          <Option name="child_id" type="QString" value="gdal:translate_1"/>
+          <Option name="component_description" type="QString" value="Output Road Length Raster"/>
+          <Option name="component_pos_x" type="double" value="607.95431991355167"/>
+          <Option name="component_pos_y" type="double" value="722.06382053470952"/>
+          <Option name="default_value" type="invalid"/>
+          <Option name="mandatory" type="bool" value="false"/>
+          <Option name="name" type="QString" value="Output Road Length Raster"/>
+          <Option name="output_name" type="QString" value="OUTPUT"/>
+        </Option>
+      </Option>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="COPY_SUBDATASETS" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="bool" value="false"/>
+          </Option>
+        </Option>
+        <Option name="DATA_TYPE" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="4"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="model:Rasterize Field (-at -i)_1"/>
+            <Option name="output_name" type="QString" value="gdal:rasterize_1:Output Raster"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+        </Option>
+        <Option name="NODATA" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="OPTIONS" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QString" value=""/>
+          </Option>
+        </Option>
+        <Option name="TARGET_CRS" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="model:Create Grid of Region Layer (-at -i)_1" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="model:Create Grid of Region Layer (-at -i)"/>
+      <Option name="component_description" type="QString" value="Create Grid of Region Layer (-at -i)"/>
+      <Option name="component_pos_x" type="double" value="410.73406154731919"/>
+      <Option name="component_pos_y" type="double" value="270.29640741840586"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="model:Create Grid of Region Layer (-at -i)_1"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="hmm" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="double" value="100"/>
+          </Option>
+        </Option>
+        <Option name="inputregionlayer2" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" type="QString" value="inputregionlayer"/>
+            <Option name="source" type="int" value="0"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="model:Create Region Roads Layer_1" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="model:Create Region Roads Layer"/>
+      <Option name="component_description" type="QString" value="Create Region Roads Layer"/>
+      <Option name="component_pos_x" type="double" value="410.76108534944251"/>
+      <Option name="component_pos_y" type="double" value="73.774798211983921"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="model:Create Region Roads Layer_1"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="inputregionlayer" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" type="QString" value="inputregionlayer"/>
+            <Option name="source" type="int" value="0"/>
+          </Option>
+        </Option>
+        <Option name="inputroadlayer" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" type="QString" value="inputroadlayer"/>
+            <Option name="source" type="int" value="0"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="model:Rasterize Field (-at -i)_1" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="model:Rasterize Field (-at -i)"/>
+      <Option name="component_description" type="QString" value="Rasterize Field (-at -i)"/>
+      <Option name="component_pos_x" type="double" value="408.76120496413284"/>
+      <Option name="component_pos_y" type="double" value="578.1167171002138"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="model:Rasterize Field (-at -i)_1"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="fieldtoraster" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QString" value="LENGTH"/>
+          </Option>
+        </Option>
+        <Option name="hmm" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" type="QString" value="outputrastersize"/>
+            <Option name="source" type="int" value="0"/>
+          </Option>
+        </Option>
+        <Option name="inputextentlayer" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" type="QString" value="inputregionlayer"/>
+            <Option name="source" type="int" value="0"/>
+          </Option>
+        </Option>
+        <Option name="inputregionlayer2" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="qgis:sumlinelengths_1"/>
+            <Option name="output_name" type="QString" value="OUTPUT"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="qgis:createspatialindex_1" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="qgis:createspatialindex"/>
+      <Option name="component_description" type="QString" value="Index Region Roads"/>
+      <Option name="component_pos_x" type="double" value="411.8621197253027"/>
+      <Option name="component_pos_y" type="double" value="179.01792542990864"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="qgis:createspatialindex_1"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="model:Create Region Roads Layer_1"/>
+            <Option name="output_name" type="QString" value="native:clip_1:Output Region Roads Layer"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="qgis:createspatialindex_2" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="qgis:createspatialindex"/>
+      <Option name="component_description" type="QString" value="Index Region Grid"/>
+      <Option name="component_pos_x" type="double" value="411.40072821398599"/>
+      <Option name="component_pos_y" type="double" value="368.32049970451089"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="qgis:createspatialindex_2"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="model:Create Grid of Region Layer (-at -i)_1"/>
+            <Option name="output_name" type="QString" value="native:clip_1:Output Vector Grid Clipped"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="qgis:sumlinelengths_1" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="qgis:sumlinelengths"/>
+      <Option name="component_description" type="QString" value="Sum line lengths"/>
+      <Option name="component_pos_x" type="double" value="409.83435948361472"/>
+      <Option name="component_pos_y" type="double" value="477.55717034659676"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="qgis:sumlinelengths_1"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="COUNT_FIELD" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QString" value="COUNT"/>
+          </Option>
+        </Option>
+        <Option name="LEN_FIELD" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QString" value="LENGTH"/>
+          </Option>
+        </Option>
+        <Option name="LINES" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="qgis:createspatialindex_1"/>
+            <Option name="output_name" type="QString" value="OUTPUT"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+        </Option>
+        <Option name="POLYGONS" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="qgis:createspatialindex_2"/>
+            <Option name="output_name" type="QString" value="OUTPUT"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="help"/>
+  <Option name="model_group" type="QString" value=""/>
+  <Option name="model_name" type="QString" value="Create Road Length Raster"/>
+  <Option name="parameterDefinitions" type="Map">
+    <Option name="gdal:translate_1:Output Road Length Raster" type="Map">
+      <Option name="create_by_default" type="bool" value="true"/>
+      <Option name="default" type="invalid"/>
+      <Option name="description" type="QString" value="Output Road Length Raster"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="gdal:translate_1:Output Road Length Raster"/>
+      <Option name="parameter_type" type="QString" value="rasterDestination"/>
+      <Option name="supports_non_file_outputs" type="bool" value="false"/>
+    </Option>
+    <Option name="inputregionlayer" type="Map">
+      <Option name="data_types" type="List">
+        <Option type="int" value="2"/>
+      </Option>
+      <Option name="default" type="invalid"/>
+      <Option name="description" type="QString" value="Input Region Layer"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="inputregionlayer"/>
+      <Option name="parameter_type" type="QString" value="vector"/>
+    </Option>
+    <Option name="inputroadlayer" type="Map">
+      <Option name="data_types" type="List">
+        <Option type="int" value="1"/>
+      </Option>
+      <Option name="default" type="invalid"/>
+      <Option name="description" type="QString" value="Input Road Layer"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="inputroadlayer"/>
+      <Option name="parameter_type" type="QString" value="vector"/>
+    </Option>
+    <Option name="outputrastersize" type="Map">
+      <Option name="data_type" type="int" value="1"/>
+      <Option name="default" type="QString" value="100"/>
+      <Option name="default_unit" type="int" value="9"/>
+      <Option name="description" type="QString" value="Output Raster Size"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="max" type="double" value="1000"/>
+      <Option name="metadata"/>
+      <Option name="min" type="double" value="0"/>
+      <Option name="name" type="QString" value="outputrastersize"/>
+      <Option name="parameter_type" type="QString" value="distance"/>
+      <Option name="parent" type="QString" value="inputregionlayer"/>
+    </Option>
+  </Option>
+  <Option name="parameters" type="Map">
+    <Option name="inputregionlayer" type="Map">
+      <Option name="component_description" type="QString" value="inputregionlayer"/>
+      <Option name="component_pos_x" type="double" value="132.66666666666669"/>
+      <Option name="component_pos_y" type="double" value="107.33333333333334"/>
+      <Option name="name" type="QString" value="inputregionlayer"/>
+    </Option>
+    <Option name="inputroadlayer" type="Map">
+      <Option name="component_description" type="QString" value="inputroadlayer"/>
+      <Option name="component_pos_x" type="double" value="133.26666822748786"/>
+      <Option name="component_pos_y" type="double" value="36.873373850432628"/>
+      <Option name="name" type="QString" value="inputroadlayer"/>
+    </Option>
+    <Option name="outputrastersize" type="Map">
+      <Option name="component_description" type="QString" value="outputrastersize"/>
+      <Option name="component_pos_x" type="double" value="134.00000000000006"/>
+      <Option name="component_pos_y" type="double" value="191.33333333333334"/>
+      <Option name="name" type="QString" value="outputrastersize"/>
+    </Option>
+  </Option>
+</Option>

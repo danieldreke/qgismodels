@@ -1,0 +1,190 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option type="Map" name="children">
+    <Option type="Map" name="gdal:rasterize_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="gdal:rasterize" type="QString" name="alg_id"/>
+      <Option value="Rasterize (vector to raster)" type="QString" name="component_description"/>
+      <Option value="405.3333333333332" type="double" name="component_pos_x"/>
+      <Option value="272.66666666666663" type="double" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option value="gdal:rasterize_1" type="QString" name="id"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="Output Raster">
+          <Option value="gdal:rasterize_1" type="QString" name="child_id"/>
+          <Option value="Output Raster" type="QString" name="component_description"/>
+          <Option value="605.33333333333326" type="double" name="component_pos_x"/>
+          <Option value="317.66666666666663" type="double" name="component_pos_y"/>
+          <Option type="invalid" name="default_value"/>
+          <Option value="false" type="bool" name="mandatory"/>
+          <Option value="Output Raster" type="QString" name="name"/>
+          <Option value="OUTPUT" type="QString" name="output_name"/>
+        </Option>
+      </Option>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="BURN">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option type="invalid" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="DATA_TYPE">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="3" type="int" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="EXTENT">
+          <Option type="Map">
+            <Option value="inputextentlayer" type="QString" name="parameter_name"/>
+            <Option value="0" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="FIELD">
+          <Option type="Map">
+            <Option value="fieldtoraster" type="QString" name="parameter_name"/>
+            <Option value="0" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="HEIGHT">
+          <Option type="Map">
+            <Option value="hmm" type="QString" name="parameter_name"/>
+            <Option value="0" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INIT">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option type="invalid" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="inputregionlayer2" type="QString" name="parameter_name"/>
+            <Option value="0" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INVERT">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="false" type="bool" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="NODATA">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="0" type="double" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="OPTIONS">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="-at" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="UNITS">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="1" type="int" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="WIDTH">
+          <Option type="Map">
+            <Option value="hmm" type="QString" name="parameter_name"/>
+            <Option value="0" type="int" name="source"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="help"/>
+  <Option value="" type="QString" name="model_group"/>
+  <Option value="Rasterize Field (uint32)" type="QString" name="model_name"/>
+  <Option type="Map" name="parameterDefinitions">
+    <Option type="Map" name="fieldtoraster">
+      <Option value="false" type="bool" name="allow_multiple"/>
+      <Option value="0" type="int" name="data_type"/>
+      <Option value="fid_count" type="QString" name="default"/>
+      <Option value="Field to Rasterize" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option name="metadata"/>
+      <Option value="fieldtoraster" type="QString" name="name"/>
+      <Option value="field" type="QString" name="parameter_type"/>
+      <Option value="inputregionlayer2" type="QString" name="parent_layer"/>
+    </Option>
+    <Option type="Map" name="gdal:rasterize_1:Output Raster">
+      <Option value="true" type="bool" name="create_by_default"/>
+      <Option type="invalid" name="default"/>
+      <Option value="Output Raster" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option name="metadata"/>
+      <Option value="gdal:rasterize_1:Output Raster" type="QString" name="name"/>
+      <Option value="rasterDestination" type="QString" name="parameter_type"/>
+      <Option value="false" type="bool" name="supports_non_file_outputs"/>
+    </Option>
+    <Option type="Map" name="hmm">
+      <Option value="1" type="int" name="data_type"/>
+      <Option value="100" type="QString" name="default"/>
+      <Option value="9" type="int" name="default_unit"/>
+      <Option value="Output Grid Size" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option value="100000" type="double" name="max"/>
+      <Option name="metadata"/>
+      <Option value="0" type="double" name="min"/>
+      <Option value="hmm" type="QString" name="name"/>
+      <Option value="distance" type="QString" name="parameter_type"/>
+      <Option value="inputregionlayer2" type="QString" name="parent"/>
+    </Option>
+    <Option type="Map" name="inputextentlayer">
+      <Option type="List" name="data_types">
+        <Option value="5" type="int"/>
+      </Option>
+      <Option type="invalid" name="default"/>
+      <Option value="Input Extent Layer" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option name="metadata"/>
+      <Option value="inputextentlayer" type="QString" name="name"/>
+      <Option value="vector" type="QString" name="parameter_type"/>
+    </Option>
+    <Option type="Map" name="inputregionlayer2">
+      <Option type="List" name="data_types">
+        <Option value="-1" type="int"/>
+      </Option>
+      <Option type="invalid" name="default"/>
+      <Option value="Input Layer with Field" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option name="metadata"/>
+      <Option value="inputregionlayer2" type="QString" name="name"/>
+      <Option value="vector" type="QString" name="parameter_type"/>
+    </Option>
+  </Option>
+  <Option type="Map" name="parameters">
+    <Option type="Map" name="fieldtoraster">
+      <Option value="fieldtoraster" type="QString" name="component_description"/>
+      <Option value="135.33333333333331" type="double" name="component_pos_x"/>
+      <Option value="114.66666666666667" type="double" name="component_pos_y"/>
+      <Option value="fieldtoraster" type="QString" name="name"/>
+    </Option>
+    <Option type="Map" name="hmm">
+      <Option value="hmm" type="QString" name="component_description"/>
+      <Option value="134.6666666666666" type="double" name="component_pos_x"/>
+      <Option value="187.99999999999991" type="double" name="component_pos_y"/>
+      <Option value="hmm" type="QString" name="name"/>
+    </Option>
+    <Option type="Map" name="inputextentlayer">
+      <Option value="inputextentlayer" type="QString" name="component_description"/>
+      <Option value="134.66666666666669" type="double" name="component_pos_x"/>
+      <Option value="263.33333333333337" type="double" name="component_pos_y"/>
+      <Option value="inputextentlayer" type="QString" name="name"/>
+    </Option>
+    <Option type="Map" name="inputregionlayer2">
+      <Option value="inputregionlayer2" type="QString" name="component_description"/>
+      <Option value="134" type="double" name="component_pos_x"/>
+      <Option value="46" type="double" name="component_pos_y"/>
+      <Option value="inputregionlayer2" type="QString" name="name"/>
+    </Option>
+  </Option>
+</Option>

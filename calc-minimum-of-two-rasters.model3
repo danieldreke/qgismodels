@@ -1,0 +1,112 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option name="children" type="Map">
+    <Option name="saga:rastercalculator_1" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="saga:rastercalculator"/>
+      <Option name="component_description" type="QString" value="Raster calculator"/>
+      <Option name="component_pos_x" type="double" value="228.66666666666669"/>
+      <Option name="component_pos_y" type="double" value="147.99999999999997"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="saga:rastercalculator_1"/>
+      <Option name="outputs" type="Map">
+        <Option name="Minimum Raster" type="Map">
+          <Option name="child_id" type="QString" value="saga:rastercalculator_1"/>
+          <Option name="component_description" type="QString" value="Minimum Raster"/>
+          <Option name="component_pos_x" type="double" value="428.66666666666669"/>
+          <Option name="component_pos_y" type="double" value="192.99999999999997"/>
+          <Option name="default_value" type="invalid"/>
+          <Option name="mandatory" type="bool" value="false"/>
+          <Option name="name" type="QString" value="Minimum Raster"/>
+          <Option name="output_name" type="QString" value="RESULT"/>
+        </Option>
+      </Option>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="FORMULA" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QString" value="ifelse(a &lt; b, a, b)"/>
+          </Option>
+        </Option>
+        <Option name="GRIDS" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" type="QString" value="inputraster1"/>
+            <Option name="source" type="int" value="0"/>
+          </Option>
+        </Option>
+        <Option name="RESAMPLING" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="3"/>
+          </Option>
+        </Option>
+        <Option name="TYPE" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="5"/>
+          </Option>
+        </Option>
+        <Option name="USE_NODATA" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="bool" value="false"/>
+          </Option>
+        </Option>
+        <Option name="XGRIDS" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" type="QString" value="inputraster2"/>
+            <Option name="source" type="int" value="0"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="help"/>
+  <Option name="model_group" type="QString" value=""/>
+  <Option name="model_name" type="QString" value="Calc Minimum of Two Rasters"/>
+  <Option name="parameterDefinitions" type="Map">
+    <Option name="inputraster1" type="Map">
+      <Option name="default" type="invalid"/>
+      <Option name="description" type="QString" value="Input Raster 1"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="inputraster1"/>
+      <Option name="parameter_type" type="QString" value="raster"/>
+    </Option>
+    <Option name="inputraster2" type="Map">
+      <Option name="default" type="invalid"/>
+      <Option name="description" type="QString" value="Input Raster 2"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="inputraster2"/>
+      <Option name="parameter_type" type="QString" value="raster"/>
+    </Option>
+    <Option name="saga:rastercalculator_1:Minimum Raster" type="Map">
+      <Option name="create_by_default" type="bool" value="true"/>
+      <Option name="default" type="invalid"/>
+      <Option name="description" type="QString" value="Minimum Raster"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="saga:rastercalculator_1:Minimum Raster"/>
+      <Option name="parameter_type" type="QString" value="rasterDestination"/>
+      <Option name="supports_non_file_outputs" type="bool" value="false"/>
+    </Option>
+  </Option>
+  <Option name="parameters" type="Map">
+    <Option name="inputraster1" type="Map">
+      <Option name="component_description" type="QString" value="inputraster1"/>
+      <Option name="component_pos_x" type="double" value="120"/>
+      <Option name="component_pos_y" type="double" value="60"/>
+      <Option name="name" type="QString" value="inputraster1"/>
+    </Option>
+    <Option name="inputraster2" type="Map">
+      <Option name="component_description" type="QString" value="inputraster2"/>
+      <Option name="component_pos_x" type="double" value="340"/>
+      <Option name="component_pos_y" type="double" value="60"/>
+      <Option name="name" type="QString" value="inputraster2"/>
+    </Option>
+  </Option>
+</Option>

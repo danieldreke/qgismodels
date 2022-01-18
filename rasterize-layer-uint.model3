@@ -1,0 +1,173 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option name="children" type="Map">
+    <Option name="gdal:rasterize_1" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="gdal:rasterize"/>
+      <Option name="component_description" type="QString" value="Rasterize (vector to raster)"/>
+      <Option name="component_pos_x" type="double" value="405.3333333333332"/>
+      <Option name="component_pos_y" type="double" value="272.66666666666663"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="gdal:rasterize_1"/>
+      <Option name="outputs" type="Map">
+        <Option name="Output Raster" type="Map">
+          <Option name="child_id" type="QString" value="gdal:rasterize_1"/>
+          <Option name="component_description" type="QString" value="Output Raster"/>
+          <Option name="component_pos_x" type="double" value="605.33333333333326"/>
+          <Option name="component_pos_y" type="double" value="317.66666666666663"/>
+          <Option name="default_value" type="invalid"/>
+          <Option name="mandatory" type="bool" value="false"/>
+          <Option name="name" type="QString" value="Output Raster"/>
+          <Option name="output_name" type="QString" value="OUTPUT"/>
+        </Option>
+      </Option>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="BURN" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="double" value="1"/>
+          </Option>
+        </Option>
+        <Option name="DATA_TYPE" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="3"/>
+          </Option>
+        </Option>
+        <Option name="EXTENT" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" type="QString" value="inputextentlayer"/>
+            <Option name="source" type="int" value="0"/>
+          </Option>
+        </Option>
+        <Option name="FIELD" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="HEIGHT" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" type="QString" value="hmm"/>
+            <Option name="source" type="int" value="0"/>
+          </Option>
+        </Option>
+        <Option name="INIT" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="double" value="0"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" type="QString" value="inputregionlayer2"/>
+            <Option name="source" type="int" value="0"/>
+          </Option>
+        </Option>
+        <Option name="INVERT" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="bool" value="false"/>
+          </Option>
+        </Option>
+        <Option name="NODATA" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="double" value="0"/>
+          </Option>
+        </Option>
+        <Option name="OPTIONS" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QString" value=""/>
+          </Option>
+        </Option>
+        <Option name="UNITS" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="1"/>
+          </Option>
+        </Option>
+        <Option name="WIDTH" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" type="QString" value="hmm"/>
+            <Option name="source" type="int" value="0"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="help"/>
+  <Option name="model_group" type="QString" value=""/>
+  <Option name="model_name" type="QString" value="Rasterize Layer uint32"/>
+  <Option name="parameterDefinitions" type="Map">
+    <Option name="gdal:rasterize_1:Output Raster" type="Map">
+      <Option name="create_by_default" type="bool" value="true"/>
+      <Option name="default" type="invalid"/>
+      <Option name="description" type="QString" value="Output Raster"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="gdal:rasterize_1:Output Raster"/>
+      <Option name="parameter_type" type="QString" value="rasterDestination"/>
+      <Option name="supports_non_file_outputs" type="bool" value="false"/>
+    </Option>
+    <Option name="hmm" type="Map">
+      <Option name="data_type" type="int" value="1"/>
+      <Option name="default" type="QString" value="100"/>
+      <Option name="default_unit" type="int" value="9"/>
+      <Option name="description" type="QString" value="Output Grid Size"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="max" type="double" value="100000"/>
+      <Option name="metadata"/>
+      <Option name="min" type="double" value="0"/>
+      <Option name="name" type="QString" value="hmm"/>
+      <Option name="parameter_type" type="QString" value="distance"/>
+      <Option name="parent" type="QString" value="inputregionlayer2"/>
+    </Option>
+    <Option name="inputextentlayer" type="Map">
+      <Option name="data_types" type="List">
+        <Option type="int" value="5"/>
+      </Option>
+      <Option name="default" type="invalid"/>
+      <Option name="description" type="QString" value="Input Extent Layer"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="inputextentlayer"/>
+      <Option name="parameter_type" type="QString" value="vector"/>
+    </Option>
+    <Option name="inputregionlayer2" type="Map">
+      <Option name="data_types" type="List">
+        <Option type="int" value="-1"/>
+      </Option>
+      <Option name="default" type="invalid"/>
+      <Option name="description" type="QString" value="Input Vector Layer"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="inputregionlayer2"/>
+      <Option name="parameter_type" type="QString" value="vector"/>
+    </Option>
+  </Option>
+  <Option name="parameters" type="Map">
+    <Option name="hmm" type="Map">
+      <Option name="component_description" type="QString" value="hmm"/>
+      <Option name="component_pos_x" type="double" value="134.6666666666666"/>
+      <Option name="component_pos_y" type="double" value="187.99999999999991"/>
+      <Option name="name" type="QString" value="hmm"/>
+    </Option>
+    <Option name="inputextentlayer" type="Map">
+      <Option name="component_description" type="QString" value="inputextentlayer"/>
+      <Option name="component_pos_x" type="double" value="134.66666666666669"/>
+      <Option name="component_pos_y" type="double" value="263.33333333333337"/>
+      <Option name="name" type="QString" value="inputextentlayer"/>
+    </Option>
+    <Option name="inputregionlayer2" type="Map">
+      <Option name="component_description" type="QString" value="inputregionlayer2"/>
+      <Option name="component_pos_x" type="double" value="134"/>
+      <Option name="component_pos_y" type="double" value="46"/>
+      <Option name="name" type="QString" value="inputregionlayer2"/>
+    </Option>
+  </Option>
+</Option>

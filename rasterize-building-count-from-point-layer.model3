@@ -1,0 +1,145 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option name="children" type="Map">
+    <Option name="model:Rasterize Field (uint32)_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="model:Rasterize Field (uint32)" type="QString"/>
+      <Option name="component_description" value="Rasterize Field (uint32)" type="QString"/>
+      <Option name="component_pos_x" value="431.33333333333326" type="double"/>
+      <Option name="component_pos_y" value="203.33333333333331" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="model:Rasterize Field (uint32)_1" type="QString"/>
+      <Option name="outputs" type="Map">
+        <Option name="Output Raster" type="Map">
+          <Option name="child_id" value="model:Rasterize Field (uint32)_1" type="QString"/>
+          <Option name="component_description" value="Output Raster" type="QString"/>
+          <Option name="component_pos_x" value="631.33333333333326" type="double"/>
+          <Option name="component_pos_y" value="248.33333333333331" type="double"/>
+          <Option name="default_value" type="invalid"/>
+          <Option name="mandatory" value="false" type="bool"/>
+          <Option name="name" value="Output Raster" type="QString"/>
+          <Option name="output_name" value="gdal:rasterize_1:Output Raster" type="QString"/>
+        </Option>
+      </Option>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="fieldtoraster" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="bc_sqkm" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="hmm" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="1000" type="double"/>
+          </Option>
+        </Option>
+        <Option name="inputextentlayer" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="native:reprojectlayer_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="inputregionlayer2" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" value="inputpointlayer" type="QString"/>
+            <Option name="source" value="0" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:reprojectlayer_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="native:reprojectlayer" type="QString"/>
+      <Option name="component_description" value="Reproject layer" type="QString"/>
+      <Option name="component_pos_x" value="430.66666666666663" type="double"/>
+      <Option name="component_pos_y" value="103.33333333333331" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="native:reprojectlayer_1" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" value="inputextentlayer" type="QString"/>
+            <Option name="source" value="0" type="int"/>
+          </Option>
+        </Option>
+        <Option name="TARGET_CRS" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="QgsCoordinateReferenceSystem">
+              <spatialrefsys>
+                <proj4>+proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+                <srsid>1000</srsid>
+                <srid>3035</srid>
+                <authid>EPSG:3035</authid>
+                <description>ETRS89 / LAEA Europe</description>
+                <projectionacronym>laea</projectionacronym>
+                <ellipsoidacronym>GRS80</ellipsoidacronym>
+                <geographicflag>false</geographicflag>
+              </spatialrefsys>
+            </Option>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="help"/>
+  <Option name="model_group" value="" type="QString"/>
+  <Option name="model_name" value="Rasterize Building Count from Point Layer" type="QString"/>
+  <Option name="parameterDefinitions" type="Map">
+    <Option name="inputextentlayer" type="Map">
+      <Option name="data_types" type="List">
+        <Option value="2" type="int"/>
+      </Option>
+      <Option name="default" type="invalid"/>
+      <Option name="description" value="Input Extent Layer" type="QString"/>
+      <Option name="flags" value="0" type="int"/>
+      <Option name="metadata"/>
+      <Option name="name" value="inputextentlayer" type="QString"/>
+      <Option name="parameter_type" value="vector" type="QString"/>
+    </Option>
+    <Option name="inputpointlayer" type="Map">
+      <Option name="data_types" type="List">
+        <Option value="0" type="int"/>
+      </Option>
+      <Option name="default" type="invalid"/>
+      <Option name="description" value="Input Layer with Field" type="QString"/>
+      <Option name="flags" value="0" type="int"/>
+      <Option name="metadata"/>
+      <Option name="name" value="inputpointlayer" type="QString"/>
+      <Option name="parameter_type" value="vector" type="QString"/>
+    </Option>
+    <Option name="model:Rasterize Field (uint32)_1:Output Raster" type="Map">
+      <Option name="create_by_default" value="true" type="bool"/>
+      <Option name="default" type="invalid"/>
+      <Option name="description" value="Output Raster" type="QString"/>
+      <Option name="flags" value="0" type="int"/>
+      <Option name="metadata"/>
+      <Option name="name" value="model:Rasterize Field (uint32)_1:Output Raster" type="QString"/>
+      <Option name="parameter_type" value="rasterDestination" type="QString"/>
+      <Option name="supports_non_file_outputs" value="true" type="bool"/>
+    </Option>
+  </Option>
+  <Option name="parameters" type="Map">
+    <Option name="inputextentlayer" type="Map">
+      <Option name="component_description" value="inputextentlayer" type="QString"/>
+      <Option name="component_pos_x" value="120" type="double"/>
+      <Option name="component_pos_y" value="60" type="double"/>
+      <Option name="name" value="inputextentlayer" type="QString"/>
+    </Option>
+    <Option name="inputpointlayer" type="Map">
+      <Option name="component_description" value="inputpointlayer" type="QString"/>
+      <Option name="component_pos_x" value="120" type="double"/>
+      <Option name="component_pos_y" value="121.99999999999999" type="double"/>
+      <Option name="name" value="inputpointlayer" type="QString"/>
+    </Option>
+  </Option>
+</Option>

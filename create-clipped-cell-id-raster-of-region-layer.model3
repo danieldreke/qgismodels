@@ -1,0 +1,130 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option name="children" type="Map">
+    <Option name="model:Clip Raster by Region Layer inclusively_1" type="Map">
+      <Option value="true" name="active" type="bool"/>
+      <Option name="alg_config"/>
+      <Option value="model:Clip Raster by Region Layer inclusively" name="alg_id" type="QString"/>
+      <Option value="Clip Raster by Region Layer inclusively" name="component_description" type="QString"/>
+      <Option value="400.66666666666663" name="component_pos_x" type="double"/>
+      <Option value="272.66666666666652" name="component_pos_y" type="double"/>
+      <Option name="dependencies"/>
+      <Option value="model:Clip Raster by Region Layer inclusively_1" name="id" type="QString"/>
+      <Option name="outputs" type="Map">
+        <Option name="Clipped Cell Id Raster" type="Map">
+          <Option value="model:Clip Raster by Region Layer inclusively_1" name="child_id" type="QString"/>
+          <Option value="Clipped Cell Id Raster" name="component_description" type="QString"/>
+          <Option value="600.66666666666663" name="component_pos_x" type="double"/>
+          <Option value="317.66666666666652" name="component_pos_y" type="double"/>
+          <Option name="default_value" type="invalid"/>
+          <Option value="false" name="mandatory" type="bool"/>
+          <Option value="Clipped Cell Id Raster" name="name" type="QString"/>
+          <Option value="gdal:cliprasterbymasklayer_1:Clipped Raster" name="output_name" type="QString"/>
+        </Option>
+      </Option>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="inputraster" type="List">
+          <Option type="Map">
+            <Option value="model:Create Cell Id Raster_1" name="child_id" type="QString"/>
+            <Option value="gdal:translate_1:Output Cell Id Raster" name="output_name" type="QString"/>
+            <Option value="1" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="inputregionlayer" type="List">
+          <Option type="Map">
+            <Option value="inputregionlayer" name="parameter_name" type="QString"/>
+            <Option value="0" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="outputrastercellsizem" type="List">
+          <Option type="Map">
+            <Option value="outputcellsizem" name="parameter_name" type="QString"/>
+            <Option value="0" name="source" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="model:Create Cell Id Raster_1" type="Map">
+      <Option value="true" name="active" type="bool"/>
+      <Option name="alg_config"/>
+      <Option value="model:Create Cell Id Raster" name="alg_id" type="QString"/>
+      <Option value="Create Cell Id Raster" name="component_description" type="QString"/>
+      <Option value="399.33333333333326" name="component_pos_x" type="double"/>
+      <Option value="175.33333333333331" name="component_pos_y" type="double"/>
+      <Option name="dependencies"/>
+      <Option value="model:Create Cell Id Raster_1" name="id" type="QString"/>
+      <Option name="outputs"/>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="inputregionlayer" type="List">
+          <Option type="Map">
+            <Option value="inputregionlayer" name="parameter_name" type="QString"/>
+            <Option value="0" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="outputgridsize" type="List">
+          <Option type="Map">
+            <Option value="outputcellsizem" name="parameter_name" type="QString"/>
+            <Option value="0" name="source" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="help"/>
+  <Option value="" name="model_group" type="QString"/>
+  <Option value="Create Clipped Cell Id Raster" name="model_name" type="QString"/>
+  <Option name="parameterDefinitions" type="Map">
+    <Option name="inputregionlayer" type="Map">
+      <Option name="data_types" type="List">
+        <Option value="2" type="int"/>
+      </Option>
+      <Option name="default" type="invalid"/>
+      <Option value="Input Region Layer" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option name="metadata"/>
+      <Option value="inputregionlayer" name="name" type="QString"/>
+      <Option value="vector" name="parameter_type" type="QString"/>
+    </Option>
+    <Option name="model:Clip Raster by Region Layer inclusively_1:Clipped Cell Id Raster" type="Map">
+      <Option value="true" name="create_by_default" type="bool"/>
+      <Option name="default" type="invalid"/>
+      <Option value="Clipped Cell Id Raster" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option name="metadata"/>
+      <Option value="model:Clip Raster by Region Layer inclusively_1:Clipped Cell Id Raster" name="name" type="QString"/>
+      <Option value="rasterDestination" name="parameter_type" type="QString"/>
+      <Option value="true" name="supports_non_file_outputs" type="bool"/>
+    </Option>
+    <Option name="outputcellsizem" type="Map">
+      <Option value="1" name="data_type" type="int"/>
+      <Option value="0" name="default" type="QString"/>
+      <Option value="9" name="default_unit" type="int"/>
+      <Option value="Output Cell Size [m]" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option value="10000" name="max" type="double"/>
+      <Option name="metadata"/>
+      <Option value="100" name="min" type="double"/>
+      <Option value="outputcellsizem" name="name" type="QString"/>
+      <Option value="distance" name="parameter_type" type="QString"/>
+      <Option value="inputregionlayer" name="parent" type="QString"/>
+    </Option>
+  </Option>
+  <Option name="parameters" type="Map">
+    <Option name="inputregionlayer" type="Map">
+      <Option value="inputregionlayer" name="component_description" type="QString"/>
+      <Option value="120" name="component_pos_x" type="double"/>
+      <Option value="60" name="component_pos_y" type="double"/>
+      <Option value="inputregionlayer" name="name" type="QString"/>
+    </Option>
+    <Option name="outputcellsizem" type="Map">
+      <Option value="outputcellsizem" name="component_description" type="QString"/>
+      <Option value="118" name="component_pos_x" type="double"/>
+      <Option value="130" name="component_pos_y" type="double"/>
+      <Option value="outputcellsizem" name="name" type="QString"/>
+    </Option>
+  </Option>
+</Option>
