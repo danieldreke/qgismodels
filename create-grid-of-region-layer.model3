@@ -1,181 +1,131 @@
 <!DOCTYPE model>
 <Option type="Map">
-  <Option type="Map" name="children">
-    <Option type="Map" name="model:Rasterize Region Layer (-at -i)_1">
-      <Option type="bool" name="active" value="true"/>
+  <Option name="children" type="Map">
+    <Option name="model:Rasterize Region Layer (-at -i)_1" type="Map">
+      <Option value="true" name="active" type="bool"/>
       <Option name="alg_config"/>
-      <Option type="QString" name="alg_id" value="model:Rasterize Region Layer (-at -i)"/>
-      <Option type="QString" name="component_description" value="Rasterize Region Layer (-at -i)"/>
-      <Option type="double" name="component_pos_x" value="404.66666666666663"/>
-      <Option type="double" name="component_pos_y" value="104.66666666666674"/>
+      <Option value="model:Rasterize Region Layer (-at -i)" name="alg_id" type="QString"/>
+      <Option value="Rasterize Region Layer (-at -i)" name="component_description" type="QString"/>
+      <Option value="404.66666666666663" name="component_pos_x" type="double"/>
+      <Option value="104.66666666666674" name="component_pos_y" type="double"/>
       <Option name="dependencies"/>
-      <Option type="QString" name="id" value="model:Rasterize Region Layer (-at -i)_1"/>
+      <Option value="model:Rasterize Region Layer (-at -i)_1" name="id" type="QString"/>
       <Option name="outputs"/>
-      <Option type="bool" name="outputs_collapsed" value="true"/>
-      <Option type="bool" name="parameters_collapsed" value="true"/>
-      <Option type="Map" name="params">
-        <Option type="List" name="hmm">
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="hmm" type="List">
           <Option type="Map">
-            <Option type="QString" name="parameter_name" value="hmm"/>
-            <Option type="int" name="source" value="0"/>
+            <Option value="hmm" name="parameter_name" type="QString"/>
+            <Option value="0" name="source" type="int"/>
           </Option>
         </Option>
-        <Option type="List" name="inputregionlayer2">
+        <Option name="inputregionlayer2" type="List">
           <Option type="Map">
-            <Option type="QString" name="parameter_name" value="inputregionlayer2"/>
-            <Option type="int" name="source" value="0"/>
-          </Option>
-        </Option>
-      </Option>
-    </Option>
-    <Option type="Map" name="native:clip_1">
-      <Option type="bool" name="active" value="true"/>
-      <Option name="alg_config"/>
-      <Option type="QString" name="alg_id" value="native:clip"/>
-      <Option type="QString" name="component_description" value="Clip"/>
-      <Option type="double" name="component_pos_x" value="624.66666666666663"/>
-      <Option type="double" name="component_pos_y" value="378.66666666666669"/>
-      <Option name="dependencies"/>
-      <Option type="QString" name="id" value="native:clip_1"/>
-      <Option type="Map" name="outputs">
-        <Option type="Map" name="Output Vector Grid Clipped">
-          <Option type="QString" name="child_id" value="native:clip_1"/>
-          <Option type="QString" name="component_description" value="Output Vector Grid Clipped"/>
-          <Option type="double" name="component_pos_x" value="829.33333333333326"/>
-          <Option type="double" name="component_pos_y" value="455.66666666666663"/>
-          <Option type="invalid" name="default_value"/>
-          <Option type="bool" name="mandatory" value="false"/>
-          <Option type="QString" name="name" value="Output Vector Grid Clipped"/>
-          <Option type="QString" name="output_name" value="OUTPUT"/>
-        </Option>
-      </Option>
-      <Option type="bool" name="outputs_collapsed" value="true"/>
-      <Option type="bool" name="parameters_collapsed" value="true"/>
-      <Option type="Map" name="params">
-        <Option type="List" name="INPUT">
-          <Option type="Map">
-            <Option type="QString" name="child_id" value="native:pixelstopolygons_1"/>
-            <Option type="QString" name="output_name" value="OUTPUT"/>
-            <Option type="int" name="source" value="1"/>
-          </Option>
-        </Option>
-        <Option type="List" name="OVERLAY">
-          <Option type="Map">
-            <Option type="QString" name="parameter_name" value="inputregionlayer2"/>
-            <Option type="int" name="source" value="0"/>
+            <Option value="inputregionlayer2" name="parameter_name" type="QString"/>
+            <Option value="0" name="source" type="int"/>
           </Option>
         </Option>
       </Option>
     </Option>
-    <Option type="Map" name="native:pixelstopolygons_1">
-      <Option type="bool" name="active" value="true"/>
+    <Option name="native:pixelstopolygons_1" type="Map">
+      <Option value="true" name="active" type="bool"/>
       <Option name="alg_config"/>
-      <Option type="QString" name="alg_id" value="native:pixelstopolygons"/>
-      <Option type="QString" name="component_description" value="Raster pixels to polygons"/>
-      <Option type="double" name="component_pos_x" value="404.66666666666663"/>
-      <Option type="double" name="component_pos_y" value="211.99999999999997"/>
+      <Option value="native:pixelstopolygons" name="alg_id" type="QString"/>
+      <Option value="Raster pixels to polygons" name="component_description" type="QString"/>
+      <Option value="404.66666666666663" name="component_pos_x" type="double"/>
+      <Option value="211.99999999999997" name="component_pos_y" type="double"/>
       <Option name="dependencies"/>
-      <Option type="QString" name="id" value="native:pixelstopolygons_1"/>
-      <Option type="Map" name="outputs">
-        <Option type="Map" name="Output Vector Grid">
-          <Option type="QString" name="child_id" value="native:pixelstopolygons_1"/>
-          <Option type="QString" name="component_description" value="Output Vector Grid"/>
-          <Option type="double" name="component_pos_x" value="612.66666666666674"/>
-          <Option type="double" name="component_pos_y" value="283"/>
-          <Option type="invalid" name="default_value"/>
-          <Option type="bool" name="mandatory" value="false"/>
-          <Option type="QString" name="name" value="Output Vector Grid"/>
-          <Option type="QString" name="output_name" value="OUTPUT"/>
+      <Option value="native:pixelstopolygons_1" name="id" type="QString"/>
+      <Option name="outputs" type="Map">
+        <Option name="Output Vector Grid" type="Map">
+          <Option value="native:pixelstopolygons_1" name="child_id" type="QString"/>
+          <Option value="Output Vector Grid" name="component_description" type="QString"/>
+          <Option value="612.66666666666674" name="component_pos_x" type="double"/>
+          <Option value="283" name="component_pos_y" type="double"/>
+          <Option name="default_value" type="invalid"/>
+          <Option value="false" name="mandatory" type="bool"/>
+          <Option value="Output Vector Grid" name="name" type="QString"/>
+          <Option value="OUTPUT" name="output_name" type="QString"/>
         </Option>
       </Option>
-      <Option type="bool" name="outputs_collapsed" value="true"/>
-      <Option type="bool" name="parameters_collapsed" value="true"/>
-      <Option type="Map" name="params">
-        <Option type="List" name="FIELD_NAME">
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="FIELD_NAME" type="List">
           <Option type="Map">
-            <Option type="int" name="source" value="2"/>
-            <Option type="QString" name="static_value" value="VALUE"/>
+            <Option value="2" name="source" type="int"/>
+            <Option value="VALUE" name="static_value" type="QString"/>
           </Option>
         </Option>
-        <Option type="List" name="INPUT_RASTER">
+        <Option name="INPUT_RASTER" type="List">
           <Option type="Map">
-            <Option type="QString" name="child_id" value="model:Rasterize Region Layer (-at -i)_1"/>
-            <Option type="QString" name="output_name" value="gdal:rasterize_1:Output Raster Grid"/>
-            <Option type="int" name="source" value="1"/>
+            <Option value="model:Rasterize Region Layer (-at -i)_1" name="child_id" type="QString"/>
+            <Option value="gdal:rasterize_1:Output Raster Grid" name="output_name" type="QString"/>
+            <Option value="1" name="source" type="int"/>
           </Option>
         </Option>
-        <Option type="List" name="RASTER_BAND">
+        <Option name="RASTER_BAND" type="List">
           <Option type="Map">
-            <Option type="int" name="source" value="2"/>
-            <Option type="QString" name="static_value" value="1"/>
+            <Option value="2" name="source" type="int"/>
+            <Option value="1" name="static_value" type="QString"/>
           </Option>
         </Option>
       </Option>
     </Option>
   </Option>
   <Option name="help"/>
-  <Option type="QString" name="model_group" value=""/>
-  <Option type="QString" name="model_name" value="Create Grid of Region Layer (-at -i)"/>
-  <Option type="Map" name="parameterDefinitions">
-    <Option type="Map" name="hmm">
-      <Option type="int" name="data_type" value="1"/>
-      <Option type="QString" name="default" value="100"/>
-      <Option type="int" name="default_unit" value="9"/>
-      <Option type="QString" name="description" value="Output Grid Size"/>
-      <Option type="int" name="flags" value="0"/>
-      <Option type="double" name="max" value="100000"/>
+  <Option value="" name="model_group" type="QString"/>
+  <Option value="Create Grid of Region Layer (-at -i)" name="model_name" type="QString"/>
+  <Option name="parameterDefinitions" type="Map">
+    <Option name="hmm" type="Map">
+      <Option value="1" name="data_type" type="int"/>
+      <Option value="100" name="default" type="QString"/>
+      <Option value="9" name="default_unit" type="int"/>
+      <Option value="Output Grid Size" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option value="100000" name="max" type="double"/>
       <Option name="metadata"/>
-      <Option type="double" name="min" value="0"/>
-      <Option type="QString" name="name" value="hmm"/>
-      <Option type="QString" name="parameter_type" value="distance"/>
-      <Option type="QString" name="parent" value="inputregionlayer2"/>
+      <Option value="0" name="min" type="double"/>
+      <Option value="hmm" name="name" type="QString"/>
+      <Option value="distance" name="parameter_type" type="QString"/>
+      <Option value="inputregionlayer2" name="parent" type="QString"/>
     </Option>
-    <Option type="Map" name="inputregionlayer2">
-      <Option type="List" name="data_types">
-        <Option type="int" value="2"/>
+    <Option name="inputregionlayer2" type="Map">
+      <Option name="data_types" type="List">
+        <Option value="2" type="int"/>
       </Option>
-      <Option type="invalid" name="default"/>
-      <Option type="QString" name="description" value="Input Region Layer"/>
-      <Option type="int" name="flags" value="0"/>
+      <Option name="default" type="invalid"/>
+      <Option value="Input Region Layer" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
       <Option name="metadata"/>
-      <Option type="QString" name="name" value="inputregionlayer2"/>
-      <Option type="QString" name="parameter_type" value="vector"/>
+      <Option value="inputregionlayer2" name="name" type="QString"/>
+      <Option value="vector" name="parameter_type" type="QString"/>
     </Option>
-    <Option type="Map" name="native:clip_1:Output Vector Grid Clipped">
-      <Option type="bool" name="create_by_default" value="true"/>
-      <Option type="int" name="data_type" value="-1"/>
-      <Option type="invalid" name="default"/>
-      <Option type="QString" name="description" value="Output Vector Grid Clipped"/>
-      <Option type="int" name="flags" value="0"/>
+    <Option name="native:pixelstopolygons_1:Output Vector Grid" type="Map">
+      <Option value="true" name="create_by_default" type="bool"/>
+      <Option value="2" name="data_type" type="int"/>
+      <Option name="default" type="invalid"/>
+      <Option value="Output Vector Grid" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
       <Option name="metadata"/>
-      <Option type="QString" name="name" value="native:clip_1:Output Vector Grid Clipped"/>
-      <Option type="QString" name="parameter_type" value="sink"/>
-      <Option type="bool" name="supports_non_file_outputs" value="true"/>
-    </Option>
-    <Option type="Map" name="native:pixelstopolygons_1:Output Vector Grid">
-      <Option type="bool" name="create_by_default" value="true"/>
-      <Option type="int" name="data_type" value="2"/>
-      <Option type="invalid" name="default"/>
-      <Option type="QString" name="description" value="Output Vector Grid"/>
-      <Option type="int" name="flags" value="0"/>
-      <Option name="metadata"/>
-      <Option type="QString" name="name" value="native:pixelstopolygons_1:Output Vector Grid"/>
-      <Option type="QString" name="parameter_type" value="sink"/>
-      <Option type="bool" name="supports_non_file_outputs" value="true"/>
+      <Option value="native:pixelstopolygons_1:Output Vector Grid" name="name" type="QString"/>
+      <Option value="sink" name="parameter_type" type="QString"/>
+      <Option value="true" name="supports_non_file_outputs" type="bool"/>
     </Option>
   </Option>
-  <Option type="Map" name="parameters">
-    <Option type="Map" name="hmm">
-      <Option type="QString" name="component_description" value="hmm"/>
-      <Option type="double" name="component_pos_x" value="135.99999999999997"/>
-      <Option type="double" name="component_pos_y" value="124.66666666666663"/>
-      <Option type="QString" name="name" value="hmm"/>
+  <Option name="parameters" type="Map">
+    <Option name="hmm" type="Map">
+      <Option value="hmm" name="component_description" type="QString"/>
+      <Option value="135.99999999999997" name="component_pos_x" type="double"/>
+      <Option value="124.66666666666663" name="component_pos_y" type="double"/>
+      <Option value="hmm" name="name" type="QString"/>
     </Option>
-    <Option type="Map" name="inputregionlayer2">
-      <Option type="QString" name="component_description" value="inputregionlayer2"/>
-      <Option type="double" name="component_pos_x" value="134"/>
-      <Option type="double" name="component_pos_y" value="46"/>
-      <Option type="QString" name="name" value="inputregionlayer2"/>
+    <Option name="inputregionlayer2" type="Map">
+      <Option value="inputregionlayer2" name="component_description" type="QString"/>
+      <Option value="134" name="component_pos_x" type="double"/>
+      <Option value="46" name="component_pos_y" type="double"/>
+      <Option value="inputregionlayer2" name="name" type="QString"/>
     </Option>
   </Option>
 </Option>
